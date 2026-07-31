@@ -1,5 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
-import { CATEGORY, cleanArticle, discoverTrialLinks, fetchPage, isCompletedSitting, parseStoredUpdates } from "./lib/maltatoday.mjs";
+import { CATEGORY, cleanArticle, discoverTrialLinks, fetchPage, isCompletedSitting, latestIndexedTrialReport, parseStoredUpdates } from "./lib/maltatoday.mjs";
 
 const OUTPUT = new URL("../data/latest.js", import.meta.url);
 const apiKey = process.env.OPENAI_API_KEY;
@@ -7,30 +7,36 @@ if (!apiKey) throw new Error("Set OPENAI_API_KEY before running npm run update")
 
 const previousSource = await readFile(OUTPUT, "utf8");
 const storedUpdates = parseStoredUpdates(previousSource);
-const categoryHtml = await fetchPage(CATEGORY);
-const links = discoverTrialLinks(categoryHtml);
-if (!links.length) throw new Error("No current Yorgen Fenech trial article found on MaltaToday");
-
 let selected;
-for (const sourceUrl of links.slice(0, 5)) {
-  const articleHtml = await fetchPage(sourceUrl);
-  const articleText = cleanArticle(articleHtml);
-  if (isCompletedSitting(articleText)) {
-    selected = { sourceUrl, articleHtml, articleText };
-    break;
+try {
+  const categoryHtml = await fetchPage(CATEGORY);
+  const links = discoverTrialLinks(categoryHtml);
+  for (const sourceUrl of links.slice(0, 5)) {
+    const articleHtml = await fetchPage(sourceUrl);
+    const articleText = cleanArticle(articleHtml);
+    if (isCompletedSitting(articleText)) {
+      selected = { sourceUrl, articleHtml, articleText };
+      break;
+    }
   }
+} catch (error) {
+  console.warn(`Direct MaltaToday retrieval unavailable (${error.message}); checking its indexed headlines.`);
 }
 if (!selected) {
-  console.log("No completed MaltaToday sitting is available yet; leaving the site unchanged.");
-  process.exit(0);
+  const indexed = await latestIndexedTrialReport();
+  if (!indexed) {
+    console.log("No completed MaltaToday sitting is indexed yet; leaving the site unchanged.");
+    process.exit(0);
+  }
+  selected = { indexed: true, sourceUrl: CATEGORY, articleText: indexed.title, indexedTitle: indexed.title, published: indexed.published };
 }
-if (storedUpdates.some(update => update.day.sourceUrl === selected.sourceUrl)) {
+if (storedUpdates.some(update => update.day.sourceUrl === selected.sourceUrl || update.day.sourceTitle === selected.indexedTitle)) {
   console.log(`Already recorded ${selected.sourceUrl}; leaving the site unchanged.`);
   process.exit(0);
 }
 
 const previousDay = Math.max(0, ...storedUpdates.map(update => Number(update.day.day) || 0), 25);
-const response = await fetch("https://api.openai.com/v1/responses", {
+const response = selected.indexed ? null : await fetch("https://api.openai.com/v1/responses", {
   method: "POST",
   headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
   body: JSON.stringify({
@@ -50,7 +56,9 @@ const response = await fetch("https://api.openai.com/v1/responses", {
   })
 });
 let update;
-if (response.ok) {
+if (selected.indexed) {
+  update = indexedFallbackUpdate(selected, previousDay);
+} else if (response.ok) {
   const result = await response.json();
   const outputText = result.output?.flatMap(item => item.content || []).find(item => item.type === "output_text")?.text;
   if (!outputText) throw new Error("OpenAI returned no structured output");
@@ -133,6 +141,21 @@ function fallbackUpdate(html, text, sourceUrl, previousDay) {
       title: title.replace(/^LIVE\s*[|︱:-]*\s*/i, ""),
       summary: description
     },
+    relationUpdates: []
+  };
+}
+
+function indexedFallbackUpdate(selected, previousDay) {
+  const date = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", timeZone: "Europe/Malta" }).format(selected.published);
+  const title = selected.indexedTitle.replace(/^LIVE\s*[|︱:-]*\s*/i, "");
+  return {
+    day: {
+      day: previousDay + 1, date, type: "testimony", title,
+      summary: `MaltaToday’s completed daily report is led by: “${title}”.`,
+      points: [title, "The update was recovered from MaltaToday’s indexed headline after its site blocked the automation runner.", "No allegation reported in court is treated as a finding of fact."],
+      sourceTitle: selected.indexedTitle
+    },
+    lead: { label: `Yesterday · ${date} 2026`, title, summary: `MaltaToday’s completed daily report is led by: “${title}”.` },
     relationUpdates: []
   };
 }

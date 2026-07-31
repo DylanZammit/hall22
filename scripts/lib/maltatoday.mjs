@@ -85,3 +85,29 @@ export function parseStoredUpdates(source) {
   if (!Array.isArray(parsed)) throw new Error("DAILY_UPDATES must be an array");
   return parsed;
 }
+
+export async function latestIndexedTrialReport(now = new Date()) {
+  const query = encodeURIComponent("site:maltatoday.com.mt/news/court_and_police Yorgen Fenech trial when:2d");
+  const url = `https://news.google.com/rss/search?q=${query}&hl=en&gl=MT&ceid=MT:en`;
+  const xml = await fetchWithRetries(url, 2);
+  const localDate = dateKey(now);
+  const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(match => {
+    const item = match[1];
+    const title = decodeXml(item.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || "").replace(/\s+-\s+MaltaToday$/i, "");
+    const published = new Date(item.match(/<pubDate>([\s\S]*?)<\/pubDate>/i)?.[1] || 0);
+    return { title, published };
+  }).filter(item =>
+    /Yorgen Fenech/i.test(item.title) && /trial|jury/i.test(item.title) && dateKey(item.published) === localDate
+  );
+  items.sort((a, b) => Number(/^LIVE\b/i.test(a.title)) - Number(/^LIVE\b/i.test(b.title)) || b.published - a.published);
+  return items[0] || null;
+}
+
+function dateKey(date) {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Malta", year: "numeric", month: "2-digit", day: "2-digit" }).format(date);
+}
+
+function decodeXml(value) {
+  return value.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/&amp;/g, "&").replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"').replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+}
