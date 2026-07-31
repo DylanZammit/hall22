@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An independent visual digest of MaltaToday's coverage of the Yorgen Fenech jury trial.">
+  <title>Hall 22 — The Fenech Trial Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#top">HALL <span>22</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#brief">The brief</a><a href="#days">Timeline</a><a href="#network">People</a><a href="#method">Method</a>
+    </nav>
+    <div class="status"><i></i> Proceedings ongoing</div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow">Republic of Malta v Yorgen Fenech · Trial monitor</div>
+      <h1>The trial inside<br><em>Hall 22.</em></h1>
+      <p class="dek">A navigable account of the evidence, claims and contested narratives reported in MaltaToday’s daily live coverage of the jury trial over Daphne Caruana Galizia’s assassination.</p>
+      <div class="hero-meta">
+        <div><strong id="sitting-count">26</strong><span>sittings reviewed</span></div>
+        <div><strong>01—30</strong><span>July 2026</span></div>
+        <div><strong>1 source</strong><span>MaltaToday only</span></div>
+      </div>
+      <a class="scroll-cue" href="#brief">Begin reading <span>↓</span></a>
+    </section>
+
+    <section class="yesterday" aria-labelledby="yesterday-title">
+      <div class="yesterday-label"><i></i> Yesterday · 30 July 2026</div>
+      <div class="yesterday-copy">
+        <span>The essential development</span>
+        <h2 id="yesterday-title">Schembri’s evidence ended with his repeated memory gaps under scrutiny.</h2>
+        <p>Cross-examination kept returning to what the former OPM chief of staff could—and said he could not—remember about people, communications and events already raised during the trial. His completed testimony sharpened the divide between the defence’s alternative focus on Schembri and the prosecution case against Fenech.</p>
+        <a href="https://www.maltatoday.com.mt/news/court_and_police" target="_blank" rel="noreferrer">Read MaltaToday’s court coverage ↗</a>
+      </div>
+      <div class="yesterday-number">26</div>
+    </section>
+
+    <section class="notice">
+      <span>Reader’s note</span>
+      <p>Fenech has pleaded not guilty. Allegations and testimony summarised here are not findings of fact. The jury alone determines the evidence.</p>
+    </section>
+
+    <section id="brief" class="section brief">
+      <div class="section-kicker">01 / The brief</div>
+      <div class="brief-grid">
+        <h2>The case, as it has unfolded before the jury</h2>
+        <div class="prose">
+          <p class="lead">The prosecution’s case is that Yorgen Fenech commissioned and financed the October 2017 murder, using Melvin Theuma as an intermediary to the men who carried it out. The defence contests that account and has repeatedly redirected attention toward Keith Schembri, gaps in the investigation and the credibility of pardoned or convicted witnesses.</p>
+          <p>The opening week established the legal frame and traced the investigation: from the Bidnija bomb scene, through a stalled inquiry, to Theuma’s covert recordings and Fenech’s 2019 arrest. The court then moved through graphic forensic and digital evidence—TNT residue, the bomb’s placement beneath the driver’s seat, burner-phone movements and the fatal SMS.</p>
+          <p>The centre of gravity later shifted to people. Vince Muscat and the Degiorgio brothers described the planning and execution while making contested allegations about Chris Cardona, Keith Schembri and David Gatt. Police witnesses were pressed on missing devices, a phantom government job, the scope of Theuma’s pardon and his unexplained wealth. Edgar Brincat and Johann Cremona then recounted Theuma’s fears, recordings, payments and conversations. By day 25, Keith Schembri’s own evidence—and the cross-examination of it—had become the trial’s focal point.</p>
+        </div>
+      </div>
+      <div class="pillars">
+        <article><b>01</b><h3>The alleged commission</h3><p>Prosecutors say a €150,000 agreement ran from Fenech through Theuma to the hitmen.</p></article>
+        <article><b>02</b><h3>The technical trail</h3><p>Cell-site analysis, burner phones, the detonation SMS and explosives evidence reconstruct the attack.</p></article>
+        <article><b>03</b><h3>The contested witnesses</h3><p>Defence challenges memory, motives, immunity and the financial conduct of key prosecution witnesses.</p></article>
+        <article><b>04</b><h3>The alternative focus</h3><p>Cross-examination repeatedly tests alleged links to Schembri, Cardona and gaps in police searches.</p></article>
+      </div>
+    </section>
+
+    <section id="days" class="section days">
+      <div class="section-head">
+        <div><div class="section-kicker">02 / Proceedings</div><h2>The trial timeline</h2></div>
+        <div class="filters" role="group" aria-label="Filter days">
+          <button class="active" data-filter="all">All</button><button data-filter="case">Case</button><button data-filter="forensics">Forensics</button><button data-filter="testimony">Testimony</button>
+        </div>
+      </div>
+      <div class="timeline-shell">
+        <aside class="day-rail" aria-label="Trial days"></aside>
+        <article class="day-detail" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section id="network" class="section network-section">
+      <div class="section-head">
+        <div><div class="section-kicker">03 / People</div><h2>A network of mentions</h2></div>
+        <p>Who referred to whom in the evidence reported so far. Select a person or connection to isolate it.</p>
+      </div>
+      <div class="network-legend">
+        <span><i class="hostile"></i> hostile / adverse</span><span><i class="neutral"></i> neutral / mixed</span><span><i class="friendly"></i> friendly / supportive</span><span class="weight-demo">line thickness = mention volume</span>
+      </div>
+      <div class="network-wrap">
+        <svg id="network-svg" viewBox="0 0 1100 650" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
+        <aside class="network-card"><div class="empty-state"><span>Explore the network</span><p>Select a node or line to see the reported connection and its source-day references.</p></div></aside>
+      </div>
+    </section>
+
+    <section id="method" class="section method">
+      <div class="section-kicker">04 / Method & sources</div>
+      <div class="method-grid">
+        <h2>What this visualisation means—and what it does not.</h2>
+        <div>
+          <p>Each arrow runs from the person speaking or whose account was read in court, to the person mentioned. Line thickness encodes an ordinal mention count compiled from MaltaToday’s daily reports: 1–2, 3–5, 6–10, or 10+. Every connection is solid.</p>
+          <p>Colour is a contextual editorial classification, not sentiment analysis and not a claim about personal relationships. Red means the reported mention was predominantly accusatory, fearful or adverse; amber means mixed or disputed; green means supportive, protective or friendly. Court officials and routine procedural references are excluded.</p>
+          <p class="updated">Research cut-off: 30 July 2026 · Last editorial review: 31 July 2026</p>
+        </div>
+      </div>
+      <div class="source-list"></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top">HALL <span>22</span></a><p>Independent research interface. Not affiliated with MaltaToday or the Courts of Malta.</p><a href="#top">Back to top ↑</a></footer>
+  <script src="data/latest.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "hall-22-trial-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "node --check app.js && node --check data/latest.js && node --check scripts/daily-update.mjs",
+    "update": "node scripts/daily-update.mjs"
+  }
+}
