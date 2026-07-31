@@ -1,0 +1,71 @@
+name: Update Hall 22 from MaltaToday
+
+on:
+  schedule:
+    # GitHub cron is UTC. Run hourly and update only when Europe/Malta is 20:00,
+    # which handles daylight-saving changes without editing the workflow.
+    - cron: "7 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Run even when it is not 20:00 in Malta
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hall22-daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Malta time
+        id: clock
+        env:
+          FORCE_UPDATE: ${{ inputs.force }}
+        run: |
+          MALTA_HOUR="$(TZ=Europe/Malta date +%H)"
+          if [ "$MALTA_HOUR" = "20" ] || [ "$FORCE_UPDATE" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out repository
+        if: steps.clock.outputs.run == 'true'
+        uses: actions/checkout@v6
+        with:
+          ref: master
+
+      - name: Set up Node
+        if: steps.clock.outputs.run == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Generate structured daily update
+        if: steps.clock.outputs.run == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run update
+
+      - name: Validate generated files
+        if: steps.clock.outputs.run == 'true'
+        run: npm run check
+
+      - name: Commit update when content changed
+        if: steps.clock.outputs.run == 'true'
+        run: |
+          if git diff --quiet -- data/latest.js; then
+            echo "No new MaltaToday trial update."
+            exit 0
+          fi
+          git config user.name "hall22-update[bot]"
+          git config user.email "hall22-update[bot]@users.noreply.github.com"
+          git add data/latest.js
+          git commit -m "Update Hall 22 daily brief"
+          git push origin master
