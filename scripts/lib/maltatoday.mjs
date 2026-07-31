@@ -8,6 +8,19 @@ const BROWSER_HEADERS = {
 };
 
 export async function fetchPage(url, attempts = 3) {
+  try {
+    return await fetchWithRetries(url, attempts);
+  } catch (directError) {
+    const relayUrl = toTranslateRelay(url);
+    try {
+      return await fetchWithRetries(relayUrl, 2);
+    } catch (relayError) {
+      throw new AggregateError([directError, relayError], `Unable to retrieve MaltaToday URL ${url}`);
+    }
+  }
+}
+
+async function fetchWithRetries(url, attempts) {
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
@@ -21,6 +34,16 @@ export async function fetchPage(url, attempts = 3) {
     if (attempt < attempts) await new Promise(resolve => setTimeout(resolve, attempt * 1500));
   }
   throw lastError;
+}
+
+export function toTranslateRelay(url) {
+  const source = new URL(url);
+  if (source.hostname !== "www.maltatoday.com.mt") return source.href;
+  source.hostname = "www-maltatoday-com-mt.translate.goog";
+  source.searchParams.set("_x_tr_sl", "auto");
+  source.searchParams.set("_x_tr_tl", "en");
+  source.searchParams.set("_x_tr_hl", "en");
+  return source.href;
 }
 
 export function discoverTrialLinks(html, baseUrl = CATEGORY) {
