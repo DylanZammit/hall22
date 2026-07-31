@@ -48,9 +48,17 @@ export function toTranslateRelay(url) {
 
 export function discoverTrialLinks(html, baseUrl = CATEGORY) {
   return [...html.matchAll(/href=["']([^"']*\/news\/court_and_police\/\d+\/[^"']*(?:yorgen|fenech)[^"']*)["']/gi)]
-    .map(match => new URL(match[1], baseUrl).href.replace(/1$/, ""))
+    .map(match => normaliseArticleUrl(new URL(match[1].replace(/&amp;/g, "&"), baseUrl)))
     .filter((url, index, all) => all.indexOf(url) === index)
     .sort((a, b) => articleId(b) - articleId(a));
+}
+
+function normaliseArticleUrl(url) {
+  if (url.hostname === "www-maltatoday-com-mt.translate.goog") url.hostname = "www.maltatoday.com.mt";
+  url.search = "";
+  url.hash = "";
+  url.pathname = url.pathname.replace(/1$/, "");
+  return url.href;
 }
 
 export function articleId(url) {

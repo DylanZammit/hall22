@@ -12,6 +12,13 @@ test("discovers, normalises and sorts MaltaToday trial links", () => {
   ]);
 });
 
+test("normalises translated MaltaToday links back to the canonical source", () => {
+  const html = `<a href="https://www-maltatoday-com-mt.translate.goog/news/court_and_police/143541/yorgen_fenech_day_27?_x_tr_sl=auto&amp;_x_tr_tl=en">story</a>`;
+  assert.deepEqual(discoverTrialLinks(html), [
+    "https://www.maltatoday.com.mt/news/court_and_police/143541/yorgen_fenech_day_27"
+  ]);
+});
+
 test("recognises a completed sitting after cleaning HTML", () => {
   const text = cleanArticle("<script>ignore()</script><p>That concludes today’s sitting.</p>");
   assert.equal(text, "That concludes today’s sitting.");
