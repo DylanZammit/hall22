@@ -4,7 +4,7 @@ on:
   schedule:
     # GitHub cron is UTC. Run hourly and update only when Europe/Malta is 20:00,
     # which handles daylight-saving changes without editing the workflow.
-    - cron: "7 * * * *"
+    - cron: "7,27,47 * * * *"
   workflow_dispatch:
     inputs:
       force:

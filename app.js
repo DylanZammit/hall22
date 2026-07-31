@@ -46,19 +46,26 @@ const summaries=[
 ["29 Jul","testimony","Schembri faces cross-examination","On the third day of Schembri’s testimony, questioning tested his account against earlier witnesses, communications and the investigation’s disputed gaps.",["Third day in witness box","Earlier evidence confronted","Proceedings remain ongoing"]]]
   .map((d,i)=>({day:i+1,date:d[0],type:d[1],title:d[2],summary:d[3],points:d[4]}));
 
-if (window.DAILY_UPDATE?.day) {
-  const update = window.DAILY_UPDATE;
+const dailyUpdates = window.DAILY_UPDATES || [];
+for (const update of dailyUpdates) {
   const existing = summaries.findIndex(day => day.day === update.day.day);
   if (existing >= 0) summaries[existing] = update.day;
   else summaries.push(update.day);
-  summaries.sort((a, b) => a.day - b.day);
   sources[update.day.day] = [update.day.sourceTitle, update.day.sourceUrl];
+}
+summaries.sort((a, b) => a.day - b.day);
+const latestUpdate = dailyUpdates.at(-1);
+if (latestUpdate) {
   document.querySelector("#sitting-count").textContent = summaries.length;
-  document.querySelector(".yesterday-label").innerHTML = `<i></i> ${update.lead.label}`;
-  document.querySelector("#yesterday-title").textContent = update.lead.title;
-  document.querySelector(".yesterday-copy p").textContent = update.lead.summary;
-  document.querySelector(".yesterday-copy a").href = update.day.sourceUrl;
-  document.querySelector(".yesterday-number").textContent = update.day.day;
+  const [latestDay, latestMonth] = latestUpdate.day.date.split(" ");
+  document.querySelector("#date-range").textContent = `01—${latestDay.padStart(2, "0")}`;
+  document.querySelector("#date-range-label").textContent = `${latestMonth === "Jul" ? "July" : latestMonth} 2026`;
+  document.querySelector("#research-cutoff").textContent = `Research cut-off: ${latestUpdate.day.date} 2026 · Updated automatically from MaltaToday`;
+  document.querySelector(".yesterday-label").innerHTML = `<i></i> ${latestUpdate.lead.label}`;
+  document.querySelector("#yesterday-title").textContent = latestUpdate.lead.title;
+  document.querySelector(".yesterday-copy p").textContent = latestUpdate.lead.summary;
+  document.querySelector(".yesterday-copy a").href = latestUpdate.day.sourceUrl;
+  document.querySelector(".yesterday-number").textContent = latestUpdate.day.day;
 }
 
 const rail=document.querySelector(".day-rail"),detail=document.querySelector(".day-detail");
@@ -89,7 +96,7 @@ const edges=[
  ["Melvin Theuma","George Degiorgio",14,0,"Accounts placed Theuma between the alleged commissioner and the Degiorgio brothers.","Days 2–4, 11–19"],
  ["Melvin Theuma","Alfred Degiorgio",14,0,"Accounts placed Theuma in the payment and communication chain.","Days 2–4, 11–19"]
 ];
-for (const update of window.DAILY_UPDATE?.relationUpdates || []) {
+for (const update of dailyUpdates.flatMap(item => item.relationUpdates || [])) {
   const edge = edges.find(item => item[0] === update.from && item[1] === update.to);
   if (edge) {
     edge[2] += update.count;
