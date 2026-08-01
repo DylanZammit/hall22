@@ -35,3 +35,8 @@
 
 .node .role{font-size:17px!important}
 @media(max-width:850px){.node circle{fill:#f3f0e8!important;stroke:#8d887d}.node text:not(.role){fill:#151411!important}.node .role{font-size:18px!important;fill:#f3f0e8!important}.node.selected circle,.node:focus circle{stroke:var(--red);stroke-width:4}}
+
+/* Mobile nodes use an explicit light-disc/dark-name pairing. */
+@media(max-width:850px){#network-svg .node>circle{fill:#f3f0e8!important}#network-svg .node>text:not(.role),#network-svg .node>text:not(.role) tspan{fill:#151411!important;color:#151411!important}#network-svg .node>text.role,#network-svg .node>text.role tspan{fill:#f3f0e8!important;color:#f3f0e8!important}}
+@media(max-width:850px){#network-svg .person-name,#network-svg .person-name tspan{fill:#151411!important;stroke:#151411!important;stroke-width:.35px!important;opacity:1!important;forced-color-adjust:none!important}}
+@media(max-width:850px){.network-card{scroll-margin-top:82px}}

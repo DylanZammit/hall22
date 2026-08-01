@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260801-preview3">
 </head>
 <body>
   <header class="masthead">
     <a class="brand" href="#top">HALL <span>22</span></a>
     <nav aria-label="Primary navigation">
-      <a href="#brief">The brief</a><a href="#days">Timeline</a><a href="#network">People</a><a href="#method">Method</a>
+      <a href="#network">People</a><a href="#brief">The brief</a><a href="#days">Timeline</a><a href="#method">Method</a>
     </nav>
     <div class="status"><i></i> Proceedings ongoing</div>
   </header>
@@ -32,9 +32,9 @@
       <div class="section-index-wrap">
         <div class="section-index-label"><span>Explore this report</span><i>Select a section to jump directly to it</i></div>
         <nav class="section-index" aria-label="Explore Hall 22">
-          <a href="#brief"><b>01</b><strong>The brief</strong><i>Case overview</i><span class="nav-arrow">↓</span></a>
-          <a href="#days"><b>02</b><strong>Proceedings</strong><i>Search the timeline</i><span class="nav-arrow">↓</span></a>
-          <a href="#network"><b>03</b><strong>People</strong><i>Explore connections</i><span class="nav-arrow">↓</span></a>
+          <a href="#network"><b>01</b><strong>People</strong><i>Explore the interactive map</i><span class="nav-arrow">↓</span></a>
+          <a href="#brief"><b>02</b><strong>The brief</strong><i>Case overview</i><span class="nav-arrow">↓</span></a>
+          <a href="#days"><b>03</b><strong>Proceedings</strong><i>Search the timeline</i><span class="nav-arrow">↓</span></a>
           <a href="#method"><b>04</b><strong>Method</strong><i>Sources and caveats</i><span class="nav-arrow">↓</span></a>
         </nav>
       </div>
@@ -57,8 +57,25 @@
       <p>Fenech has pleaded not guilty. Allegations and testimony summarised here are not findings of fact. The jury alone determines the evidence.</p>
     </section>
 
+    <section id="network" class="section network-section">
+      <div class="section-head">
+        <div><div class="section-kicker">01 / Interactive map</div><h2>A network of mentions</h2></div>
+        <p>Who referred to whom in the evidence reported so far. Every person and connection can be selected for more detail.</p>
+      </div>
+      <div class="network-legend">
+        <span><i class="hostile"></i> hostile / adverse</span><span><i class="neutral"></i> neutral / mixed</span><span><i class="friendly"></i> friendly / supportive</span><span class="weight-demo">line thickness = connection mentions</span><span>circle size = total mapped mentions</span>
+      </div>
+      <div class="interaction-cue"><span>↗ Interactive</span><strong>Click a circle</strong> for a person’s profile <b>or</b> <strong>click a line</strong> for details about that connection.</div>
+      <div class="network-wrap">
+        <div class="network-canvas" tabindex="0" aria-label="Scrollable relationship diagram">
+          <svg id="network-svg" viewBox="0 0 1100 650" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
+        </div>
+        <aside class="network-card"><div class="empty-state"><span>Explore the network</span><p>Select a node or line to see the reported connection and its source-day references.</p></div></aside>
+      </div>
+    </section>
+
     <section id="brief" class="section brief">
-      <div class="section-kicker">01 / The brief</div>
+      <div class="section-kicker">02 / The brief</div>
       <div class="brief-grid">
         <h2>The case, as it has unfolded before the jury</h2>
         <div class="prose">
@@ -77,7 +94,7 @@
 
     <section id="days" class="section days">
       <div class="section-head">
-        <div><div class="section-kicker">02 / Proceedings</div><h2>The trial timeline</h2></div>
+        <div><div class="section-kicker">03 / Proceedings</div><h2>The trial timeline</h2></div>
         <div class="timeline-tools">
           <label class="timeline-search"><span>Search proceedings</span><input id="proceedings-search" type="search" placeholder="Try “David Gatt”" autocomplete="off"><kbd>⌘ K</kbd></label>
           <div class="filters" role="group" aria-label="Filter days">
@@ -89,23 +106,6 @@
       <div class="timeline-shell">
         <aside class="day-rail" aria-label="Trial days" tabindex="0"></aside>
         <article class="day-detail" aria-live="polite"></article>
-      </div>
-    </section>
-
-    <section id="network" class="section network-section">
-      <div class="section-head">
-        <div><div class="section-kicker">03 / People</div><h2>A network of mentions</h2></div>
-        <p>Who referred to whom in the evidence reported so far. Every person and connection can be selected for more detail.</p>
-      </div>
-      <div class="network-legend">
-        <span><i class="hostile"></i> hostile / adverse</span><span><i class="neutral"></i> neutral / mixed</span><span><i class="friendly"></i> friendly / supportive</span><span class="weight-demo">line thickness = connection mentions</span><span>circle size = total mapped mentions</span>
-      </div>
-      <div class="interaction-cue"><span>↗ Interactive</span><strong>Click a circle</strong> for a person’s profile <b>or</b> <strong>click a line</strong> for details about that connection.</div>
-      <div class="network-wrap">
-        <div class="network-canvas" tabindex="0" aria-label="Scrollable relationship diagram">
-          <svg id="network-svg" viewBox="0 0 1100 650" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
-        </div>
-        <aside class="network-card"><div class="empty-state"><span>Explore the network</span><p>Select a node or line to see the reported connection and its source-day references.</p></div></aside>
       </div>
     </section>
 
@@ -134,6 +134,6 @@
     <a href="#top">Back to top ↑</a>
   </footer>
   <script src="data/latest.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=20260801-preview3"></script>
 </body>
 </html>
