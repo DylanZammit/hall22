@@ -3,10 +3,26 @@ import { CATEGORY, cleanArticle, discoverTrialLinks, fetchPage, isCompletedSitti
 
 const OUTPUT = new URL("../data/latest.js", import.meta.url);
 const apiKey = process.env.OPENAI_API_KEY;
-if (!apiKey) throw new Error("Set OPENAI_API_KEY before running npm run update");
-
 const previousSource = await readFile(OUTPUT, "utf8");
 const storedUpdates = parseStoredUpdates(previousSource);
+const mode = process.env.UPDATE_MODE || "completed";
+if (mode === "live") {
+  const existing = parseLiveUpdate(previousSource);
+  const live = await findLiveCoverage();
+  if (!live) {
+    if (existing) await writeFile(OUTPUT, serialise(storedUpdates, null));
+    console.log("No current MaltaToday live trial coverage found; cleared any stale live headline.");
+    process.exit(0);
+  }
+  if (existing?.title === live.title && existing?.sourceUrl === live.sourceUrl) {
+    console.log("Current MaltaToday live headline is already published.");
+    process.exit(0);
+  }
+  await writeFile(OUTPUT, serialise(storedUpdates, live));
+  console.log(`Published live MaltaToday headline: ${live.title}`);
+  process.exit(0);
+}
+if (!apiKey) console.warn("OPENAI_API_KEY is unavailable; metadata fallback will be used.");
 let selected;
 try {
   const categoryHtml = await fetchPage(CATEGORY);
@@ -36,7 +52,7 @@ if (storedUpdates.some(update => update.day.sourceUrl === selected.sourceUrl || 
 }
 
 const previousDay = Math.max(0, ...storedUpdates.map(update => Number(update.day.day) || 0), 25);
-const response = selected.indexed ? null : await fetch("https://api.openai.com/v1/responses", {
+const response = selected.indexed || !apiKey ? null : await fetch("https://api.openai.com/v1/responses", {
   method: "POST",
   headers: { "Authorization": `Bearer ${apiKey}`, "Content-Type": "application/json" },
   body: JSON.stringify({
@@ -58,14 +74,14 @@ const response = selected.indexed ? null : await fetch("https://api.openai.com/v
 let update;
 if (selected.indexed) {
   update = indexedFallbackUpdate(selected, previousDay);
-} else if (response.ok) {
+} else if (response?.ok) {
   const result = await response.json();
   const outputText = result.output?.flatMap(item => item.content || []).find(item => item.type === "output_text")?.text;
   if (!outputText) throw new Error("OpenAI returned no structured output");
   update = JSON.parse(outputText);
 } else {
-  const error = await response.json().catch(() => ({}));
-  console.warn(`OpenAI unavailable (${response.status}: ${error.error?.code || "unknown"}); using MaltaToday metadata fallback.`);
+  const error = response ? await response.json().catch(() => ({})) : {};
+  console.warn(`OpenAI unavailable (${response?.status || "no key"}: ${error.error?.code || "unknown"}); using MaltaToday metadata fallback.`);
   update = fallbackUpdate(selected.articleHtml, selected.articleText, selected.sourceUrl, previousDay);
 }
 update.day.sourceUrl = selected.sourceUrl;
@@ -73,7 +89,7 @@ if (update.day.day <= previousDay) throw new Error(`Generated day ${update.day.d
 
 storedUpdates.push(update);
 storedUpdates.sort((a, b) => a.day.day - b.day.day);
-await writeFile(OUTPUT, `window.DAILY_UPDATES = ${JSON.stringify(storedUpdates, null, 2)};\n`);
+await writeFile(OUTPUT, serialise(storedUpdates, null));
 console.log(`Updated day ${update.day.day} from ${selected.sourceUrl}`);
 
 function schema() {
@@ -168,4 +184,32 @@ function matchMeta(html, property) {
 function decode(value) {
   return value.replace(/&amp;nbsp;/g, " ").replace(/&amp;#39;/g, "'").replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+}
+
+async function findLiveCoverage() {
+  try {
+    const categoryHtml = await fetchPage(CATEGORY);
+    for (const sourceUrl of discoverTrialLinks(categoryHtml).slice(0, 5)) {
+      const html = await fetchPage(sourceUrl);
+      const title = decode(matchMeta(html, "og:title") || "").replace(/\s+/g, " ").trim();
+      if (/^LIVE\b/i.test(title)) return { title, sourceUrl, date: maltaDate() };
+    }
+  } catch (error) {
+    console.warn(`Direct MaltaToday live retrieval unavailable (${error.message}); checking its indexed headline.`);
+  }
+  const indexed = await latestIndexedTrialReport(new Date(), true);
+  return indexed ? { title: indexed.title, sourceUrl: CATEGORY, date: maltaDate() } : null;
+}
+
+function parseLiveUpdate(source) {
+  const match = source.match(/window\.LIVE_UPDATE\s*=\s*([^;]+);/);
+  return match ? JSON.parse(match[1]) : null;
+}
+
+function serialise(updates, live) {
+  return `window.LIVE_UPDATE = ${JSON.stringify(live, null, 2)};\nwindow.DAILY_UPDATES = ${JSON.stringify(updates, null, 2)};\n`;
+}
+
+function maltaDate() {
+  return new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Malta" }).format(new Date());
 }

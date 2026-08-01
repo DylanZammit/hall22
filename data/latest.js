@@ -1,3 +1,8 @@
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech trial enters 28th day as jury hearing continues",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143553/yorgen_fenech_trial_enters_28th_day_as_jury_hearing_continues",
+  "date": "1 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {

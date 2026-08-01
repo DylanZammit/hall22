@@ -74,7 +74,7 @@
         </div>
       </div>
       <div class="timeline-shell">
-        <aside class="day-rail" aria-label="Trial days"></aside>
+        <aside class="day-rail" aria-label="Trial days" tabindex="0"></aside>
         <article class="day-detail" aria-live="polite"></article>
       </div>
     </section>
@@ -88,7 +88,9 @@
         <span><i class="hostile"></i> hostile / adverse</span><span><i class="neutral"></i> neutral / mixed</span><span><i class="friendly"></i> friendly / supportive</span><span class="weight-demo">line thickness = mention volume</span>
       </div>
       <div class="network-wrap">
-        <svg id="network-svg" viewBox="0 0 1100 650" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
+        <div class="network-canvas" tabindex="0" aria-label="Scrollable relationship diagram">
+          <svg id="network-svg" viewBox="0 0 1100 650" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
+        </div>
         <aside class="network-card"><div class="empty-state"><span>Explore the network</span><p>Select a node or line to see the reported connection and its source-day references.</p></div></aside>
       </div>
     </section>
