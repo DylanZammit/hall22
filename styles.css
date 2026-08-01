@@ -34,4 +34,4 @@
 @media(max-width:850px){.section-index-wrap{width:100%;margin:40px 0 0}.section-index-label{align-items:start;gap:8px;flex-direction:column}.section-index-label i{line-height:1.4}.section-index{box-shadow:4px 4px 0 var(--ink)}.section-index a{min-height:88px;padding:16px}.section-index strong{font-size:21px}.section-index .nav-arrow{right:9px;bottom:9px;width:22px;height:22px}.node .role{font-size:22px!important}}
 
 .node .role{font-size:17px!important}
-@media(max-width:850px){.node .role{font-size:18px!important}}
+@media(max-width:850px){.node circle{fill:#f3f0e8!important;stroke:#8d887d}.node text:not(.role){fill:#151411!important}.node .role{font-size:18px!important;fill:#f3f0e8!important}.node.selected circle,.node:focus circle{stroke:var(--red);stroke-width:4}}
