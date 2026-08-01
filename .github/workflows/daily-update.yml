@@ -2,13 +2,12 @@ name: Update Hall 22 from MaltaToday
 
 on:
   schedule:
-    # GitHub cron is UTC. Run hourly and update only when Europe/Malta is 20:00,
-    # which handles daylight-saving changes without editing the workflow.
+    # Gate on Europe/Malta at 10:00 and 20:00 to handle daylight saving.
     - cron: "7,27,47 * * * *"
   workflow_dispatch:
     inputs:
       force:
-        description: Run even when it is not 20:00 in Malta
+        description: Run an evening update even outside scheduled hours
         type: boolean
         default: true
 
@@ -29,8 +28,12 @@ jobs:
           FORCE_UPDATE: ${{ inputs.force }}
         run: |
           MALTA_HOUR="$(TZ=Europe/Malta date +%H)"
-          if [ "$MALTA_HOUR" = "20" ] || [ "$FORCE_UPDATE" = "true" ]; then
+          if [ "$MALTA_HOUR" = "10" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "mode=live" >> "$GITHUB_OUTPUT"
+          elif [ "$MALTA_HOUR" = "20" ] || [ "$FORCE_UPDATE" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "mode=completed" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
@@ -51,6 +54,7 @@ jobs:
         if: steps.clock.outputs.run == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          UPDATE_MODE: ${{ steps.clock.outputs.mode }}
         run: npm run update
 
       - name: Validate generated files

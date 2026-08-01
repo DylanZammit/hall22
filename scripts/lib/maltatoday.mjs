@@ -86,7 +86,7 @@ export function parseStoredUpdates(source) {
   return parsed;
 }
 
-export async function latestIndexedTrialReport(now = new Date()) {
+export async function latestIndexedTrialReport(now = new Date(), liveOnly = false) {
   const query = encodeURIComponent("site:maltatoday.com.mt/news/court_and_police Yorgen Fenech trial when:2d");
   const url = `https://news.google.com/rss/search?q=${query}&hl=en&gl=MT&ceid=MT:en`;
   const xml = await fetchWithRetries(url, 2);
@@ -99,8 +99,9 @@ export async function latestIndexedTrialReport(now = new Date()) {
   }).filter(item =>
     /Yorgen Fenech/i.test(item.title) && /trial|jury/i.test(item.title) && dateKey(item.published) === localDate
   );
-  items.sort((a, b) => Number(/^LIVE\b/i.test(a.title)) - Number(/^LIVE\b/i.test(b.title)) || b.published - a.published);
-  return items[0] || null;
+  const candidates = items.filter(item => liveOnly ? /^LIVE\b/i.test(item.title) : !/^LIVE\b/i.test(item.title));
+  candidates.sort((a, b) => b.published - a.published);
+  return candidates[0] || null;
 }
 
 function dateKey(date) {
