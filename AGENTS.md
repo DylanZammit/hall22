@@ -12,7 +12,7 @@ The site provides:
 - a searchable and filterable timeline of trial proceedings;
 - a directed relationship graph showing who mentioned whom;
 - person profiles, connection context and MaltaToday source links;
-- an explanation of the methodology, editorial qualifications and source limitations.
+- a complete MaltaToday article list;
 
 MaltaToday is the project’s sole factual source. Yorgen Fenech has pleaded not guilty. Testimony, allegations and disputed claims must always remain clearly attributed and must never be presented as findings of fact.
 

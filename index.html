@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260801-preview3">
+  <link rel="stylesheet" href="styles.css?v=20260801-sources1">
 </head>
 <body>
   <header class="masthead">
     <a class="brand" href="#top">HALL <span>22</span></a>
     <nav aria-label="Primary navigation">
-      <a href="#network">People</a><a href="#brief">The brief</a><a href="#days">Timeline</a><a href="#method">Method</a>
+      <a href="#network">People</a><a href="#brief">The brief</a><a href="#days">Timeline</a><a href="#sources">Sources</a>
     </nav>
     <div class="status"><i></i> Proceedings ongoing</div>
   </header>
@@ -35,7 +35,7 @@
           <a href="#network"><b>01</b><strong>People</strong><i>Explore the interactive map</i><span class="nav-arrow">↓</span></a>
           <a href="#brief"><b>02</b><strong>The brief</strong><i>Case overview</i><span class="nav-arrow">↓</span></a>
           <a href="#days"><b>03</b><strong>Proceedings</strong><i>Search the timeline</i><span class="nav-arrow">↓</span></a>
-          <a href="#method"><b>04</b><strong>Method</strong><i>Sources and caveats</i><span class="nav-arrow">↓</span></a>
+          <a href="#sources"><b>04</b><strong>Sources</strong><i>MaltaToday articles</i><span class="nav-arrow">↓</span></a>
         </nav>
       </div>
       <a class="scroll-cue" href="#brief">Begin reading <span>↓</span></a>
@@ -109,19 +109,14 @@
       </div>
     </section>
 
-    <section id="method" class="section method">
-      <div class="section-kicker">04 / Method & sources</div>
-      <div class="method-grid">
-        <h2>What this visualisation means—and what it does not.</h2>
-        <div>
-          <p>Each arrow runs from the person speaking or whose account was read in court, to the person mentioned. Line thickness encodes an ordinal mention count compiled from MaltaToday’s daily reports: 1–2, 3–5, 6–10, or 10+. Every connection is solid.</p>
-          <p>Circle size reflects each person’s total incoming and outgoing mapped mentions. Lower-frequency witnesses and people of interest remain visible as smaller circles, and new substantive people can be added by the daily update. Circle colour carries no category: all nodes share the same neutral treatment, while a selected person receives a white outline.</p>
-          <p>Colour is a contextual editorial classification, not sentiment analysis and not a claim about personal relationships. Red means the reported mention was predominantly accusatory, fearful or adverse; amber means mixed or disputed; green means supportive, protective or friendly. Court officials and routine procedural references are excluded.</p>
-          <p class="updated" id="research-cutoff">Research cut-off: 30 July 2026 · Last editorial review: 31 July 2026</p>
-        </div>
+    <section id="sources" class="section sources-section">
+      <div class="section-head">
+        <div><div class="section-kicker">04 / Sources</div><h2>MaltaToday coverage used.</h2></div>
+        <p>The complete article list behind the timeline and relationship map.</p>
       </div>
       <div class="source-list"></div>
     </section>
+
   </main>
   <footer>
     <a class="brand" href="#top">HALL <span>22</span></a>
@@ -134,6 +129,6 @@
     <a href="#top">Back to top ↑</a>
   </footer>
   <script src="data/latest.js"></script>
-  <script src="app.js?v=20260801-people1"></script>
+  <script src="app.js?v=20260801-sources1"></script>
 </body>
 </html>

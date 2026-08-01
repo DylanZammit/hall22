@@ -40,3 +40,11 @@
 @media(max-width:850px){#network-svg .node>circle{fill:#f3f0e8!important}#network-svg .node>text:not(.role),#network-svg .node>text:not(.role) tspan{fill:#151411!important;color:#151411!important}#network-svg .node>text.role,#network-svg .node>text.role tspan{fill:#f3f0e8!important;color:#f3f0e8!important}}
 @media(max-width:850px){#network-svg .person-name,#network-svg .person-name tspan{fill:#151411!important;stroke:#151411!important;stroke-width:.35px!important;opacity:1!important;forced-color-adjust:none!important}}
 @media(max-width:850px){.network-card{scroll-margin-top:82px}}
+.section-index{grid-template-columns:repeat(4,1fr);gap:0}
+@media(max-width:850px){.section-index{grid-template-columns:repeat(2,1fr)}}
+.section-index a{min-width:0}
+.hero{min-height:calc(100vh - 68px);padding-top:8vh;padding-bottom:3vh;display:flex;flex-direction:column}.hero h1{margin-top:3vh;margin-bottom:2vh}.hero .dek{margin-top:3vh}.hero-meta{margin-top:5vh}.section-index-wrap{margin-top:auto}.section-index a{min-height:82px;padding-top:16px;padding-bottom:16px}
+.sources-section{background:#f8f5ee}.sources-section .source-list{margin-top:0}
+.hero h1{font-size:clamp(72px,12vw,210px)}
+@media(max-width:850px){.hero{padding-top:6vh}.hero h1{font-size:20vw}.hero .dek{margin-top:4vh}.section-index-wrap{margin-top:auto}.section-index a{min-height:82px}}
+@media(min-width:851px) and (max-height:800px){.hero h1{font-size:min(16vh,110px)}.hero{padding-top:4vh}.hero h1{margin-top:3vh;margin-bottom:2vh}.hero .dek{margin-top:2vh}.hero-meta,.section-index-wrap{margin-top:3vh}.section-index a{min-height:72px;padding-top:12px;padding-bottom:12px}}
