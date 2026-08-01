@@ -69,10 +69,14 @@
     <section id="days" class="section days">
       <div class="section-head">
         <div><div class="section-kicker">02 / Proceedings</div><h2>The trial timeline</h2></div>
-        <div class="filters" role="group" aria-label="Filter days">
-          <button class="active" data-filter="all">All</button><button data-filter="case">Case</button><button data-filter="forensics">Forensics</button><button data-filter="testimony">Testimony</button>
+        <div class="timeline-tools">
+          <label class="timeline-search"><span>Search proceedings</span><input id="proceedings-search" type="search" placeholder="Try “David Gatt”" autocomplete="off"><kbd>⌘ K</kbd></label>
+          <div class="filters" role="group" aria-label="Filter days">
+            <button class="active" data-filter="all">All</button><button data-filter="case">Case</button><button data-filter="forensics">Forensics</button><button data-filter="testimony">Testimony</button>
+          </div>
         </div>
       </div>
+      <p class="search-status" id="search-status" aria-live="polite"></p>
       <div class="timeline-shell">
         <aside class="day-rail" aria-label="Trial days" tabindex="0"></aside>
         <article class="day-detail" aria-live="polite"></article>
@@ -82,11 +86,12 @@
     <section id="network" class="section network-section">
       <div class="section-head">
         <div><div class="section-kicker">03 / People</div><h2>A network of mentions</h2></div>
-        <p>Who referred to whom in the evidence reported so far. Select a person or connection to isolate it.</p>
+        <p>Who referred to whom in the evidence reported so far. Every person and connection can be selected for more detail.</p>
       </div>
       <div class="network-legend">
         <span><i class="hostile"></i> hostile / adverse</span><span><i class="neutral"></i> neutral / mixed</span><span><i class="friendly"></i> friendly / supportive</span><span class="weight-demo">line thickness = connection mentions</span><span>circle size = total mapped mentions</span>
       </div>
+      <div class="interaction-cue"><span>↗ Interactive</span><strong>Click a circle</strong> for a person’s profile <b>or</b> <strong>click a line</strong> for details about that connection.</div>
       <div class="network-wrap">
         <div class="network-canvas" tabindex="0" aria-label="Scrollable relationship diagram">
           <svg id="network-svg" viewBox="0 0 1100 650" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
