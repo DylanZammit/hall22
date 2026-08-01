@@ -61,7 +61,6 @@ if (latestUpdate) {
   const [latestDay, latestMonth] = latestUpdate.day.date.split(" ");
   document.querySelector("#date-range").textContent = `01—${latestDay.padStart(2, "0")}`;
   document.querySelector("#date-range-label").textContent = `${latestMonth === "Jul" ? "July" : latestMonth} 2026`;
-  document.querySelector("#research-cutoff").textContent = `Research cut-off: ${latestUpdate.day.date} 2026 · Updated automatically from MaltaToday`;
   document.querySelector(".yesterday-label").innerHTML = `<i></i> ${latestUpdate.lead.label}`;
   document.querySelector("#yesterday-title").textContent = latestUpdate.lead.title;
   document.querySelector(".yesterday-copy p").textContent = latestUpdate.lead.summary;
