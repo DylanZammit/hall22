@@ -68,7 +68,7 @@
       <div class="interaction-cue"><span>↗ Interactive</span><strong>Click a circle</strong> for a person’s profile <b>or</b> <strong>click a line</strong> for details about that connection.</div>
       <div class="network-wrap">
         <div class="network-canvas" tabindex="0" aria-label="Scrollable relationship diagram">
-          <svg id="network-svg" viewBox="0 0 1100 650" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
+          <svg id="network-svg" viewBox="0 0 1100 820" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
         </div>
         <aside class="network-card"><div class="empty-state"><span>Explore the network</span><p>Select a node or line to see the reported connection and its source-day references.</p></div></aside>
       </div>
@@ -115,7 +115,7 @@
         <h2>What this visualisation means—and what it does not.</h2>
         <div>
           <p>Each arrow runs from the person speaking or whose account was read in court, to the person mentioned. Line thickness encodes an ordinal mention count compiled from MaltaToday’s daily reports: 1–2, 3–5, 6–10, or 10+. Every connection is solid.</p>
-          <p>Circle size reflects each person’s total incoming and outgoing mapped mentions. Circle colour carries no category: all nodes share the same neutral treatment, while a selected person receives a white outline.</p>
+          <p>Circle size reflects each person’s total incoming and outgoing mapped mentions. Lower-frequency witnesses and people of interest remain visible as smaller circles, and new substantive people can be added by the daily update. Circle colour carries no category: all nodes share the same neutral treatment, while a selected person receives a white outline.</p>
           <p>Colour is a contextual editorial classification, not sentiment analysis and not a claim about personal relationships. Red means the reported mention was predominantly accusatory, fearful or adverse; amber means mixed or disputed; green means supportive, protective or friendly. Court officials and routine procedural references are excluded.</p>
           <p class="updated" id="research-cutoff">Research cut-off: 30 July 2026 · Last editorial review: 31 July 2026</p>
         </div>
@@ -134,6 +134,6 @@
     <a href="#top">Back to top ↑</a>
   </footer>
   <script src="data/latest.js"></script>
-  <script src="app.js?v=20260801-preview3"></script>
+  <script src="app.js?v=20260801-people1"></script>
 </body>
 </html>

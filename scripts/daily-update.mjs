@@ -5,6 +5,13 @@ const OUTPUT = new URL("../data/latest.js", import.meta.url);
 const apiKey = process.env.OPENAI_API_KEY;
 const previousSource = await readFile(OUTPUT, "utf8");
 const storedUpdates = parseStoredUpdates(previousSource);
+const knownPeople = [
+  "Daphne Caruana Galizia", "Yorgen Fenech", "Melvin Theuma", "Keith Schembri",
+  "Vince Muscat", "George Degiorgio", "Alfred Degiorgio", "Chris Cardona",
+  "Johann Cremona", "Edgar Brincat", "David Gatt", "Keith Arnaud",
+  "Adrian Vella", "Lawrence Cutajar", "Nicholas Vella",
+  ...storedUpdates.flatMap(update => (update.peopleUpdates || []).map(person => person.name))
+];
 const mode = process.env.UPDATE_MODE || "completed";
 if (mode === "live") {
   const existing = parseLiveUpdate(previousSource);
@@ -63,11 +70,14 @@ const response = selected.indexed || !apiKey ? null : await fetch("https://api.o
       "Never turn allegations or testimony into findings of fact.",
       "The lead title must capture the single most important development at a glance.",
       "Relationship updates are directed: speaker/from -> person mentioned/to.",
+      "Include substantive lower-frequency witnesses and people of interest, not only the central figures; exclude judges, lawyers acting in court and routine procedural references.",
+      "For every substantive person in the article who is not in the known-person list, add a peopleUpdates entry with a neutral role and a concise, attributed biography based only on this article.",
+      "Every new name used as a relationship endpoint must have a corresponding peopleUpdates entry.",
       "Tone: -1 predominantly adverse/hostile, 0 mixed/neutral, 1 supportive/friendly.",
       "Counts are conservative estimates of distinct substantive mentions in this article.",
       `The next trial day must be greater than ${previousDay}; use the day number explicitly reported by MaltaToday.`
     ].join("\n"),
-    input: `Previous recorded day: ${previousDay}\nSource URL: ${selected.sourceUrl}\n\nMALTA TODAY ARTICLE:\n${selected.articleText.slice(0, 120000)}`,
+    input: `Previous recorded day: ${previousDay}\nKnown graph people: ${knownPeople.join(", ")}\nSource URL: ${selected.sourceUrl}\n\nMALTA TODAY ARTICLE:\n${selected.articleText.slice(0, 120000)}`,
     text: { format: { type: "json_schema", name: "trial_daily_update", strict: true, schema: schema() } }
   })
 });
@@ -85,6 +95,17 @@ if (selected.indexed) {
   update = fallbackUpdate(selected.articleHtml, selected.articleText, selected.sourceUrl, previousDay);
 }
 update.day.sourceUrl = selected.sourceUrl;
+update.peopleUpdates ||= [];
+for (const name of new Set(update.relationUpdates.flatMap(relation => [relation.from, relation.to]))) {
+  if (!knownPeople.includes(name) && !update.peopleUpdates.some(person => person.name === name)) {
+    const relation = update.relationUpdates.find(item => item.from === name || item.to === name);
+    update.peopleUpdates.push({
+      name,
+      role: "person mentioned in evidence",
+      bio: `${name} was substantively mentioned in MaltaToday’s report for day ${update.day.day}. ${relation.context}`
+    });
+  }
+}
 if (update.day.day <= previousDay) throw new Error(`Generated day ${update.day.day} is not newer than ${previousDay}`);
 
 storedUpdates.push(update);
@@ -94,7 +115,7 @@ console.log(`Updated day ${update.day.day} from ${selected.sourceUrl}`);
 
 function schema() {
   return {
-    type: "object", additionalProperties: false, required: ["day", "lead", "relationUpdates"],
+    type: "object", additionalProperties: false, required: ["day", "lead", "peopleUpdates", "relationUpdates"],
     properties: {
       day: {
         type: "object", additionalProperties: false,
@@ -110,6 +131,12 @@ function schema() {
       lead: {
         type: "object", additionalProperties: false, required: ["label", "title", "summary"],
         properties: { label: { type: "string" }, title: { type: "string" }, summary: { type: "string" } }
+      },
+      peopleUpdates: {
+        type: "array", items: {
+          type: "object", additionalProperties: false, required: ["name", "role", "bio"],
+          properties: { name: { type: "string" }, role: { type: "string" }, bio: { type: "string" } }
+        }
       },
       relationUpdates: {
         type: "array", items: {
@@ -157,6 +184,7 @@ function fallbackUpdate(html, text, sourceUrl, previousDay) {
       title: title.replace(/^LIVE\s*[|︱:-]*\s*/i, ""),
       summary: description
     },
+    peopleUpdates: [],
     relationUpdates: []
   };
 }
@@ -172,6 +200,7 @@ function indexedFallbackUpdate(selected, previousDay) {
       sourceTitle: selected.indexedTitle
     },
     lead: { label: `Yesterday · ${date} 2026`, title, summary: `MaltaToday’s completed daily report is led by: “${title}”.` },
+    peopleUpdates: [],
     relationUpdates: []
   };
 }

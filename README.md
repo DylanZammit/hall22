@@ -136,12 +136,15 @@ window.DAILY_UPDATES = [
   {
     day: { day, date, type, title, summary, points, sourceTitle, sourceUrl },
     lead: { label, title, summary },
+    peopleUpdates: [{ name, role, bio }],
     relationUpdates: [{ from, to, count, tone, context, days }]
   }
 ];
 ```
 
 Relationship `tone` is `-1` for predominantly adverse context, `0` for mixed or neutral context, and `1` for supportive context. It describes the reported mention, not the people’s real-world personal relationship.
+
+Completed updates also extract profiles for substantive witnesses or people of interest who are not already in the graph. The browser merges these profiles into the network, gives them positions automatically and sizes their circles from their mapped mention totals. An unseen relationship endpoint is rendered with a conservative fallback profile rather than breaking the graph. Court officials and routine procedural references remain excluded.
 
 ## Editorial maintenance
 
