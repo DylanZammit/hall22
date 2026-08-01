@@ -86,6 +86,20 @@ export function parseStoredUpdates(source) {
   return parsed;
 }
 
+export function isDuplicateUpdate(storedUpdates, selected) {
+  if (selected.indexed) {
+    return storedUpdates.some(update => update.day.sourceTitle === selected.indexedTitle);
+  }
+  return storedUpdates.some(update => update.day.sourceUrl === selected.sourceUrl);
+}
+
+export function extractTrialDay(sourceUrl, articleText, previousDay) {
+  const urlDay = sourceUrl.match(/(?:day[_-]?(\d+)|(\d+)(?:st|nd|rd|th)?[_-]+day)/i);
+  if (urlDay) return Number(urlDay[1] || urlDay[2]);
+  const textDay = articleText.match(/(?:enters?|day)\s+(?:its\s+)?(\d+)(?:st|nd|rd|th)?\s+day/i);
+  return Number(textDay?.[1] || previousDay + 1);
+}
+
 export async function latestIndexedTrialReport(now = new Date(), liveOnly = false) {
   const query = encodeURIComponent("site:maltatoday.com.mt/news/court_and_police Yorgen Fenech trial when:2d");
   const url = `https://news.google.com/rss/search?q=${query}&hl=en&gl=MT&ceid=MT:en`;

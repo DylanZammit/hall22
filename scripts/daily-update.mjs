@@ -1,5 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
-import { CATEGORY, cleanArticle, discoverTrialLinks, fetchPage, isCompletedSitting, latestIndexedTrialReport, parseStoredUpdates } from "./lib/maltatoday.mjs";
+import { CATEGORY, cleanArticle, discoverTrialLinks, extractTrialDay, fetchPage, isCompletedSitting, isDuplicateUpdate, latestIndexedTrialReport, parseStoredUpdates } from "./lib/maltatoday.mjs";
 
 const OUTPUT = new URL("../data/latest.js", import.meta.url);
 const apiKey = process.env.OPENAI_API_KEY;
@@ -53,8 +53,12 @@ if (!selected) {
   }
   selected = { indexed: true, sourceUrl: CATEGORY, articleText: indexed.title, indexedTitle: indexed.title, published: indexed.published };
 }
-if (storedUpdates.some(update => update.day.sourceUrl === selected.sourceUrl || update.day.sourceTitle === selected.indexedTitle)) {
-  console.log(`Already recorded ${selected.sourceUrl}; leaving the site unchanged.`);
+if (isDuplicateUpdate(storedUpdates, selected)) {
+  if (parseLiveUpdate(previousSource)) {
+    await writeFile(OUTPUT, serialise(storedUpdates, null));
+    console.log("The completed sitting was already recorded; cleared the stale live headline.");
+  }
+  console.log(`Already recorded ${selected.indexedTitle || selected.sourceUrl}; leaving the site unchanged.`);
   process.exit(0);
 }
 
@@ -157,11 +161,7 @@ function fallbackUpdate(html, text, sourceUrl, previousDay) {
     .replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
   const description = decode(matchMeta(html, "og:description") || "MaltaToday’s latest completed report from the Yorgen Fenech jury trial.")
     .replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-  const reportedDay = Number(
-    sourceUrl.match(/day[_-]?(\d+)/i)?.[1] ||
-    text.match(/(?:enters?|day)\s+(?:its\s+)?(\d+)(?:st|nd|rd|th)?\s+day/i)?.[1] ||
-    previousDay + 1
-  );
+  const reportedDay = extractTrialDay(sourceUrl, text, previousDay);
   const dateMatch = text.match(/\b(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+2026\b/i);
   const date = dateMatch ? `${dateMatch[1]} ${dateMatch[2].slice(0, 3)}` : new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", timeZone: "Europe/Malta" }).format(new Date());
   const sentences = description.split(/(?<=[.!?])\s+/).filter(Boolean);
@@ -212,6 +212,8 @@ function matchMeta(html, property) {
 
 function decode(value) {
   return value.replace(/&amp;nbsp;/g, " ").replace(/&amp;#39;/g, "'").replace(/&nbsp;/g, " ")
+    .replace(/&rsquo;|&#8217;/g, "’").replace(/&lsquo;|&#8216;/g, "‘")
+    .replace(/&rdquo;|&#8221;/g, "”").replace(/&ldquo;|&#8220;/g, "“")
     .replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"');
 }
 

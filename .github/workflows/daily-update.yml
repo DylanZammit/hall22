@@ -2,8 +2,10 @@ name: Update Hall 22 from MaltaToday
 
 on:
   schedule:
-    # Gate on Europe/Malta at 10:00 and 20:00 to handle daylight saving.
-    - cron: "7,27,47 * * * *"
+    # Two UTC hours cover Malta's CET/CEST offset. Repeated runs are idempotent.
+    # The schedule expression, rather than delayed runner start time, chooses the mode.
+    - cron: "7,27,47 8,9 * * *"
+    - cron: "7,27,47 18,19 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -26,12 +28,15 @@ jobs:
         id: clock
         env:
           FORCE_UPDATE: ${{ inputs.force }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: |
-          MALTA_HOUR="$(TZ=Europe/Malta date +%H)"
-          if [ "$MALTA_HOUR" = "10" ]; then
+          if [ "$FORCE_UPDATE" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "mode=completed" >> "$GITHUB_OUTPUT"
+          elif [ "$EVENT_SCHEDULE" = "7,27,47 8,9 * * *" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             echo "mode=live" >> "$GITHUB_OUTPUT"
-          elif [ "$MALTA_HOUR" = "20" ] || [ "$FORCE_UPDATE" = "true" ]; then
+          elif [ "$EVENT_SCHEDULE" = "7,27,47 18,19 * * *" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             echo "mode=completed" >> "$GITHUB_OUTPUT"
           else

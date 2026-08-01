@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial enters 28th day as jury hearing continues",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143553/yorgen_fenech_trial_enters_28th_day_as_jury_hearing_continues",
-  "date": "1 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -55,6 +51,29 @@ window.DAILY_UPDATES = [
       "title": "Yorgen Fenech trial: Defence challenges police searches as jury sees 17 Black charts",
       "summary": "The jury hears testimony from several police officers, with proceedings focusing on the searches carried out following Yorgen Fenech's arrest, the recovery of documents and electronic devices, and the investigation into Keith Schembri and Dr Adrian Vella"
     },
+    "relationUpdates": []
+  },
+  {
+    "day": {
+      "day": 28,
+      "date": "1 Aug",
+      "type": "testimony",
+      "title": "Yorgen Fenech trial: ‘She never met her grandchildren,’ Daphne’s husband tells jurors",
+      "summary": "The victim’s husband spoke of the profound personal toll the murder has taken on his family, telling jurors that one of the darkest aspects of the tragedy was that 'she did not get the chance to know her grandchildren'.",
+      "points": [
+        "The victim’s husband spoke of the profound personal toll the murder has taken on his family, telling jurors that one of the darkest aspects of the tragedy was that 'she did not get the chance to know her grandchildren'.",
+        "The latest completed sitting was extracted directly from MaltaToday.",
+        "No allegation reported in court is treated as a finding of fact."
+      ],
+      "sourceTitle": "Yorgen Fenech trial: ‘She never met her grandchildren,’ Daphne’s husband tells jurors",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143553/yorgen_fenech_trial_enters_28th_day_as_jury_hearing_continues_2"
+    },
+    "lead": {
+      "label": "Yesterday · 1 Aug 2026",
+      "title": "Yorgen Fenech trial: ‘She never met her grandchildren,’ Daphne’s husband tells jurors",
+      "summary": "The victim’s husband spoke of the profound personal toll the murder has taken on his family, telling jurors that one of the darkest aspects of the tragedy was that 'she did not get the chance to know her grandchildren'."
+    },
+    "peopleUpdates": [],
     "relationUpdates": []
   }
 ];
