@@ -59,8 +59,12 @@ const latestUpdate = dailyUpdates.at(-1);
 if (latestUpdate) {
   document.querySelector("#sitting-count").textContent = summaries.length;
   const [latestDay, latestMonth] = latestUpdate.day.date.split(" ");
-  document.querySelector("#date-range").textContent = `01—${latestDay.padStart(2, "0")}`;
-  document.querySelector("#date-range-label").textContent = `${latestMonth === "Jul" ? "July" : latestMonth} 2026`;
+  const [firstDay, firstMonth] = summaries[0].date.split(" ");
+  const crossesMonth = firstMonth !== latestMonth;
+  document.querySelector("#date-range").textContent = crossesMonth
+    ? `${firstDay.padStart(2, "0")} ${firstMonth}—${latestDay.padStart(2, "0")} ${latestMonth}`
+    : `${firstDay.padStart(2, "0")}—${latestDay.padStart(2, "0")}`;
+  document.querySelector("#date-range-label").textContent = crossesMonth ? "2026" : `${latestMonth} 2026`;
   document.querySelector(".yesterday-label").innerHTML = `<i></i> ${latestUpdate.lead.label}`;
   document.querySelector("#yesterday-title").textContent = latestUpdate.lead.title;
   document.querySelector(".yesterday-copy p").textContent = latestUpdate.lead.summary;

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { cleanArticle, discoverTrialLinks, isCompletedSitting, parseStoredUpdates, toTranslateRelay } from "../scripts/lib/maltatoday.mjs";
+import { cleanArticle, discoverTrialLinks, extractTrialDay, isCompletedSitting, isDuplicateUpdate, parseStoredUpdates, toTranslateRelay } from "../scripts/lib/maltatoday.mjs";
 
 test("discovers, normalises and sorts MaltaToday trial links", () => {
   const html = `
@@ -29,6 +29,28 @@ test("recognises a completed sitting after cleaning HTML", () => {
 test("parses the persistent update history", () => {
   const updates = parseStoredUpdates('window.DAILY_UPDATES = [{"day":{"day":26}}];\n');
   assert.equal(updates[0].day.day, 26);
+});
+
+test("deduplicates indexed reports by headline rather than the shared category URL", () => {
+  const stored = [{ day: { sourceTitle: "Day 27 report", sourceUrl: "https://www.maltatoday.com.mt/news/court_and_police" } }];
+  assert.equal(isDuplicateUpdate(stored, {
+    indexed: true,
+    indexedTitle: "Day 28 report",
+    sourceUrl: "https://www.maltatoday.com.mt/news/court_and_police"
+  }), false);
+  assert.equal(isDuplicateUpdate(stored, {
+    indexed: true,
+    indexedTitle: "Day 27 report",
+    sourceUrl: "https://www.maltatoday.com.mt/news/court_and_police"
+  }), true);
+});
+
+test("extracts an ordinal trial day from MaltaToday URLs before stale article text", () => {
+  assert.equal(extractTrialDay(
+    "https://www.maltatoday.com.mt/news/court_and_police/143553/yorgen_fenech_trial_enters_28th_day_as_jury_hearing_continues_2",
+    "A related link says the trial entered its 27th day.",
+    27
+  ), 28);
 });
 
 test("builds a same-path Google Translate relay URL for MaltaToday", () => {

@@ -49,7 +49,7 @@ Because everything delivered to the browser is static, GitHub Pages can host it 
 
 ## Update pipeline
 
-The scheduled workflow uses Malta local time while GitHub cron operates in UTC.
+The scheduled workflow defines separate morning and evening UTC windows covering both Malta's CET and CEST offsets. It determines update mode from the schedule expression, not the runner's eventual start time, so GitHub queue delays cannot turn a valid run into a no-op.
 
 ### 10am: current live coverage
 
@@ -57,7 +57,7 @@ At 10am Europe/Malta time, the updater looks for a same-day MaltaToday trial hea
 
 ### 8pm: completed sitting
 
-At 8pm Europe/Malta time, the updater looks for an article containing a clear conclusion marker. A completed report is converted into a structured daily entry and appended to `window.DAILY_UPDATES`; prior entries are preserved and duplicates are ignored. A completed update also clears the temporary live lead.
+At 8pm Europe/Malta time, the updater looks for an article containing a clear conclusion marker. A completed report is converted into a structured daily entry and appended to `window.DAILY_UPDATES`; prior entries are preserved and duplicates are ignored. As soon as a completed sitting is recognised, the temporary live lead is cleared, including when that completed day was already recorded.
 
 The workflow retries during each scheduled hour so a report published slightly late can still be captured. When `data/latest.js` changes, the workflow commits and pushes it to `master`. That push triggers the Pages workflow, which validates and deploys the site.
 
