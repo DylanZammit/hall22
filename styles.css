@@ -24,3 +24,7 @@
 /* The network gets more room and readable labels at normal viewing distance. */
 .network-wrap{grid-template-columns:minmax(0,1fr) 320px;min-height:720px}.network-canvas{min-height:720px}#network-svg{min-height:720px}.node text{font-size:14px!important;font-weight:500}.node .role{font-size:11px!important;fill:#b8b3a9!important}.network-card{padding:30px}
 @media(max-width:850px){.section-index{grid-template-columns:1fr 1fr;width:100%;margin:0 0 35px}.section-index a{border-bottom:1px solid var(--rule);min-height:78px;padding:12px}.section-index a:nth-child(2){border-right:0}.section-index a:nth-child(3),.section-index a:nth-child(4){border-bottom:0}.hero{min-height:auto;padding-bottom:7vh}.section{border-top-width:5px}.network-section{padding-left:4vw;padding-right:4vw}.network-wrap{grid-template-columns:1fr;min-height:0}.network-canvas{min-height:560px}#network-svg{width:950px;min-height:560px}.node text{font-size:15px!important}.node .role{font-size:12px!important}}
+
+/* Icon-free navigation revision and larger graph role labels. */
+.section-index a{display:flex!important;flex-direction:column;justify-content:center;min-height:78px}.section-index strong{align-self:auto;font-size:20px}.section-index i{align-self:auto;margin-top:4px}.section-kicker{gap:0}.node .role{font-size:14px!important;fill:#d4cfc5!important;font-weight:500}
+@media(max-width:850px){.section-index a{min-height:72px}.node .role{font-size:16px!important}}
