@@ -75,5 +75,28 @@ window.DAILY_UPDATES = [
     },
     "peopleUpdates": [],
     "relationUpdates": []
+  },
+  {
+    "day": {
+      "day": 29,
+      "date": "2 Aug",
+      "type": "testimony",
+      "title": "Yorgen Fenech’s trial by jury through the eyes of a sketch artist",
+      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech’s trial by jury through the eyes of a sketch artist”.",
+      "points": [
+        "Yorgen Fenech’s trial by jury through the eyes of a sketch artist",
+        "The update was recovered from MaltaToday’s indexed headline after its site blocked the automation runner.",
+        "No allegation reported in court is treated as a finding of fact."
+      ],
+      "sourceTitle": "Yorgen Fenech’s trial by jury through the eyes of a sketch artist",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police"
+    },
+    "lead": {
+      "label": "Yesterday · 2 Aug 2026",
+      "title": "Yorgen Fenech’s trial by jury through the eyes of a sketch artist",
+      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech’s trial by jury through the eyes of a sketch artist”."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": []
   }
 ];
