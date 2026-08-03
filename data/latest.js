@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRzdkQndrRUMyOEVOZkZVLUtzdVIwWnJ6ZHoyRjU5eFFtQkFVbXlzS2U3VnJXRlotZmotM1EwQWZGTjZyc2p3WHVwc0FsWUNqenJyVXY0QmhVbkdxVFQtbUtpZEJZell6OTRfSHhxRHhCWV8tVG5WQzlMbS1URE9DVVJkREVKc0w3OEdTMGxrT3BBeDZ4QUJOaDRzdmdWV1JFeGFNQ0pNZjd5ZW96REZ6dUtFZ2tmR3JiMUxIamRfZGFLaWNWazZoQ1Nxak5zcFhTb0E?oc=5",
-  "date": "3 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -76,6 +72,29 @@ window.DAILY_UPDATES = [
       "label": "Yesterday · 1 Aug 2026",
       "title": "Yorgen Fenech trial: ‘She never met her grandchildren,’ Daphne’s husband tells jurors",
       "summary": "The victim’s husband spoke of the profound personal toll the murder has taken on his family, telling jurors that one of the darkest aspects of the tragedy was that 'she did not get the chance to know her grandchildren'."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": []
+  },
+  {
+    "day": {
+      "day": 29,
+      "date": "3 Aug",
+      "type": "testimony",
+      "title": "Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand - maltatoday.com.mt",
+      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand - maltatoday.com.mt”.",
+      "points": [
+        "Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand - maltatoday.com.mt",
+        "The update was recovered from MaltaToday’s indexed headline after its site blocked the automation runner.",
+        "No allegation reported in court is treated as a finding of fact."
+      ],
+      "sourceTitle": "LIVE | Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand - maltatoday.com.mt",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police"
+    },
+    "lead": {
+      "label": "Yesterday · 3 Aug 2026",
+      "title": "Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand - maltatoday.com.mt",
+      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand - maltatoday.com.mt”."
     },
     "peopleUpdates": [],
     "relationUpdates": []
