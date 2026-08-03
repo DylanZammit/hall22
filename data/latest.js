@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143592/yorgen_fenech_trial_jurors_return_to_hall_22_as_highstakes_proceedings_resume",
+  "title": "LIVE | Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRzdkQndrRUMyOEVOZkZVLUtzdVIwWnJ6ZHoyRjU5eFFtQkFVbXlzS2U3VnJXRlotZmotM1EwQWZGTjZyc2p3WHVwc0FsWUNqenJyVXY0QmhVbkdxVFQtbUtpZEJZell6OTRfSHhxRHhCWV8tVG5WQzlMbS1URE9DVVJkREVKc0w3OEdTMGxrT3BBeDZ4QUJOaDRzdmdWV1JFeGFNQ0pNZjd5ZW96REZ6dUtFZ2tmR3JiMUxIamRfZGFLaWNWazZoQ1Nxak5zcFhTb0E?oc=5",
   "date": "3 August 2026"
 };
 window.DAILY_UPDATES = [
