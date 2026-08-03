@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
   "title": "LIVE | Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143592/yorgen_fenech_trial_jurors_return_to_hall_22_as_highstakes_proceedings_resume",
   "date": "3 August 2026"
 };
 window.DAILY_UPDATES = [

@@ -109,7 +109,8 @@ export async function latestIndexedTrialReport(now = new Date(), liveOnly = fals
     const item = match[1];
     const title = decodeXml(item.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || "").replace(/\s+-\s+MaltaToday$/i, "");
     const published = new Date(item.match(/<pubDate>([\s\S]*?)<\/pubDate>/i)?.[1] || 0);
-    return { title, published };
+    const indexedUrl = decodeXml(item.match(/<link>([\s\S]*?)<\/link>/i)?.[1] || "");
+    return { title, published, indexedUrl };
   }).filter(item =>
     /Yorgen Fenech/i.test(item.title) && /trial|jury/i.test(item.title) && dateKey(item.published) === localDate
   );
@@ -117,7 +118,7 @@ export async function latestIndexedTrialReport(now = new Date(), liveOnly = fals
   candidates.sort((a, b) => b.published - a.published);
   const selected = candidates[0];
   if (!selected) return null;
-  selected.sourceUrl = await resolveIndexedSourceUrl(selected.title).catch(() => null);
+  selected.sourceUrl = await resolveIndexedSourceUrl(selected.title).catch(() => null) || selected.indexedUrl;
   return selected;
 }
 
