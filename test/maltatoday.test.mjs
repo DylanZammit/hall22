@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { cleanArticle, discoverTrialLinks, extractTrialDay, isCompletedSitting, isDuplicateUpdate, parseStoredUpdates, toTranslateRelay } from "../scripts/lib/maltatoday.mjs";
+import { cleanArticle, discoverTrialLinks, extractDuckDuckGoSourceUrl, extractTrialDay, isCompletedSitting, isDuplicateUpdate, isTrialProceedingsHeadline, parseStoredUpdates, toTranslateRelay } from "../scripts/lib/maltatoday.mjs";
 
 test("discovers, normalises and sorts MaltaToday trial links", () => {
   const html = `
@@ -51,6 +51,16 @@ test("extracts an ordinal trial day from MaltaToday URLs before stale article te
     "A related link says the trial entered its 27th day.",
     27
   ), 28);
+});
+
+test("resolves a canonical MaltaToday article URL from an indexed search result", () => {
+  const source = "https://www.maltatoday.com.mt/news/court_and_police/143592/yorgen_fenech_trial_jurors_return_to_hall_22";
+  assert.equal(extractDuckDuckGoSourceUrl(`<a href="//duckduckgo.com/l/?uddg=${encodeURIComponent(source)}&rut=x">result</a>`), source);
+});
+
+test("excludes feature articles from daily proceedings fallbacks", () => {
+  assert.equal(isTrialProceedingsHeadline("Yorgen Fenech trial: Jurors return to Hall 22"), true);
+  assert.equal(isTrialProceedingsHeadline("Yorgen Fenech’s trial through the eyes of a sketch artist"), false);
 });
 
 test("builds a same-path Google Translate relay URL for MaltaToday", () => {

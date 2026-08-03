@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech trial: Matthew Caruana Galizia takes the witness stand",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143592/yorgen_fenech_trial_jurors_return_to_hall_22_as_highstakes_proceedings_resume",
+  "date": "3 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -72,52 +76,6 @@ window.DAILY_UPDATES = [
       "label": "Yesterday · 1 Aug 2026",
       "title": "Yorgen Fenech trial: ‘She never met her grandchildren,’ Daphne’s husband tells jurors",
       "summary": "The victim’s husband spoke of the profound personal toll the murder has taken on his family, telling jurors that one of the darkest aspects of the tragedy was that 'she did not get the chance to know her grandchildren'."
-    },
-    "peopleUpdates": [],
-    "relationUpdates": []
-  },
-  {
-    "day": {
-      "day": 29,
-      "date": "2 Aug",
-      "type": "testimony",
-      "title": "Yorgen Fenech’s trial by jury through the eyes of a sketch artist",
-      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech’s trial by jury through the eyes of a sketch artist”.",
-      "points": [
-        "Yorgen Fenech’s trial by jury through the eyes of a sketch artist",
-        "The update was recovered from MaltaToday’s indexed headline after its site blocked the automation runner.",
-        "No allegation reported in court is treated as a finding of fact."
-      ],
-      "sourceTitle": "Yorgen Fenech’s trial by jury through the eyes of a sketch artist",
-      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police"
-    },
-    "lead": {
-      "label": "Yesterday · 2 Aug 2026",
-      "title": "Yorgen Fenech’s trial by jury through the eyes of a sketch artist",
-      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech’s trial by jury through the eyes of a sketch artist”."
-    },
-    "peopleUpdates": [],
-    "relationUpdates": []
-  },
-  {
-    "day": {
-      "day": 30,
-      "date": "3 Aug",
-      "type": "testimony",
-      "title": "Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt",
-      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt”.",
-      "points": [
-        "Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt",
-        "The update was recovered from MaltaToday’s indexed headline after its site blocked the automation runner.",
-        "No allegation reported in court is treated as a finding of fact."
-      ],
-      "sourceTitle": "Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt",
-      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police"
-    },
-    "lead": {
-      "label": "Yesterday · 3 Aug 2026",
-      "title": "Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt",
-      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt”."
     },
     "peopleUpdates": [],
     "relationUpdates": []

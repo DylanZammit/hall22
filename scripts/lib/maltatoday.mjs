@@ -113,9 +113,31 @@ export async function latestIndexedTrialReport(now = new Date(), liveOnly = fals
   }).filter(item =>
     /Yorgen Fenech/i.test(item.title) && /trial|jury/i.test(item.title) && dateKey(item.published) === localDate
   );
-  const candidates = items.filter(item => liveOnly ? /^LIVE\b/i.test(item.title) : !/^LIVE\b/i.test(item.title));
+  const candidates = items.filter(item => isTrialProceedingsHeadline(item.title));
   candidates.sort((a, b) => b.published - a.published);
-  return candidates[0] || null;
+  const selected = candidates[0];
+  if (!selected) return null;
+  selected.sourceUrl = await resolveIndexedSourceUrl(selected.title).catch(() => null);
+  return selected;
+}
+
+export function isTrialProceedingsHeadline(title) {
+  return /Yorgen Fenech/i.test(title) && /trial|jury/i.test(title)
+    && !/sketch|through the eyes|analysis|explainer|profile/i.test(title);
+}
+
+export function extractDuckDuckGoSourceUrl(html) {
+  for (const match of html.matchAll(/[?&]uddg=([^&"']+)/g)) {
+    const candidate = decodeURIComponent(match[1]);
+    if (/^https:\/\/www\.maltatoday\.com\.mt\/news\/court_and_police\/\d+\//i.test(candidate)) return candidate;
+  }
+  return null;
+}
+
+async function resolveIndexedSourceUrl(title) {
+  const query = encodeURIComponent(`site:maltatoday.com.mt/news/court_and_police/ "${title}"`);
+  const html = await fetchWithRetries(`https://html.duckduckgo.com/html/?q=${query}`, 2);
+  return extractDuckDuckGoSourceUrl(html);
 }
 
 function dateKey(date) {

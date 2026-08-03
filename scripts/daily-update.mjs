@@ -229,7 +229,9 @@ async function findLiveCoverage() {
     console.warn(`Direct MaltaToday live retrieval unavailable (${error.message}); checking its indexed headline.`);
   }
   const indexed = await latestIndexedTrialReport(new Date(), true);
-  return indexed ? { title: indexed.title, sourceUrl: CATEGORY, date: maltaDate() } : null;
+  if (!indexed) return null;
+  const title = /^LIVE\b/i.test(indexed.title) ? indexed.title : `LIVE | ${indexed.title}`;
+  return { title, sourceUrl: indexed.sourceUrl || CATEGORY, date: maltaDate() };
 }
 
 function parseLiveUpdate(source) {
