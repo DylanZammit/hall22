@@ -8,13 +8,16 @@ on:
     - cron: "7,27,47 18,19 * * *"
   workflow_dispatch:
     inputs:
-      force:
-        description: Run an evening update even outside scheduled hours
-        type: boolean
-        default: true
+      mode:
+        description: Update mode (auto chooses from Malta time)
+        type: choice
+        options: [auto, live, completed]
+        default: auto
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: hall22-daily-update
@@ -22,23 +25,34 @@ concurrency:
 
 jobs:
   update:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Check Malta time
         id: clock
         env:
-          FORCE_UPDATE: ${{ inputs.force }}
+          REQUESTED_MODE: ${{ inputs.mode }}
           EVENT_SCHEDULE: ${{ github.event.schedule }}
         run: |
-          if [ "$FORCE_UPDATE" = "true" ]; then
+          if [ "$REQUESTED_MODE" = "live" ] || [ "$REQUESTED_MODE" = "completed" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "mode=completed" >> "$GITHUB_OUTPUT"
+            echo "mode=$REQUESTED_MODE" >> "$GITHUB_OUTPUT"
           elif [ "$EVENT_SCHEDULE" = "7,27,47 8,9 * * *" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             echo "mode=live" >> "$GITHUB_OUTPUT"
           elif [ "$EVENT_SCHEDULE" = "7,27,47 18,19 * * *" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
             echo "mode=completed" >> "$GITHUB_OUTPUT"
+          elif [ "$REQUESTED_MODE" = "auto" ]; then
+            MALTA_HOUR="$(TZ=Europe/Malta date +%H)"
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            if [ "$MALTA_HOUR" -lt 15 ]; then
+              echo "mode=live" >> "$GITHUB_OUTPUT"
+            else
+              echo "mode=completed" >> "$GITHUB_OUTPUT"
+            fi
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
@@ -67,10 +81,12 @@ jobs:
         run: npm run check
 
       - name: Commit update when content changed
+        id: publish
         if: steps.clock.outputs.run == 'true'
         run: |
           if git diff --quiet -- data/latest.js; then
             echo "No new MaltaToday trial update."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "hall22-update[bot]"
@@ -78,3 +94,19 @@ jobs:
           git add data/latest.js
           git commit -m "Update Hall 22 daily brief"
           git push origin master
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Configure Pages
+        if: steps.publish.outputs.changed == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload updated static site
+        if: steps.publish.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - name: Deploy updated site to GitHub Pages
+        if: steps.publish.outputs.changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4

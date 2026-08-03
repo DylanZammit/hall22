@@ -53,13 +53,15 @@ The scheduled workflow defines separate morning and evening UTC windows covering
 
 ### 10am: current live coverage
 
-At 10am Europe/Malta time, the updater looks for a same-day MaltaToday trial headline beginning with `LIVE`. When found, it writes the exact headline and MaltaToday link to `window.LIVE_UPDATE`. It does not create a completed timeline day or relationship data from an unfinished sitting.
+At 10am Europe/Malta time, the updater looks for the latest same-day MaltaToday trial article. When MaltaToday is directly reachable, it publishes the article’s current `LIVE` headline and canonical link. If MaltaToday blocks the GitHub runner, the updater uses same-day search indexes to identify the headline and resolve the canonical MaltaToday article URL. It does not create a completed timeline day or relationship data from an unfinished sitting.
 
 ### 8pm: completed sitting
 
 At 8pm Europe/Malta time, the updater looks for an article containing a clear conclusion marker. A completed report is converted into a structured daily entry and appended to `window.DAILY_UPDATES`; prior entries are preserved and duplicates are ignored. As soon as a completed sitting is recognised, the temporary live lead is cleared, including when that completed day was already recorded.
 
-The workflow retries during each scheduled hour so a report published slightly late can still be captured. When `data/latest.js` changes, the workflow commits and pushes it to `master`. That push triggers the Pages workflow, which validates and deploys the site.
+The workflow retries during each scheduled window so a report published slightly late can still be captured. When `data/latest.js` changes, the same job validates it, commits and pushes it to `master`, then uploads and deploys the updated static site to GitHub Pages. Keeping deployment in the same workflow avoids GitHub’s rule that a push made with the default Actions token cannot trigger another workflow.
+
+Manual runs offer `auto`, `live` and `completed` modes. `auto` chooses live mode before 3pm Malta time and completed mode afterwards; the explicit choices are useful for testing or recovering a missed run.
 
 ## Retrieval and fallback behaviour
 
