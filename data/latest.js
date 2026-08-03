@@ -98,5 +98,28 @@ window.DAILY_UPDATES = [
     },
     "peopleUpdates": [],
     "relationUpdates": []
+  },
+  {
+    "day": {
+      "day": 30,
+      "date": "3 Aug",
+      "type": "testimony",
+      "title": "Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt",
+      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt”.",
+      "points": [
+        "Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt",
+        "The update was recovered from MaltaToday’s indexed headline after its site blocked the automation runner.",
+        "No allegation reported in court is treated as a finding of fact."
+      ],
+      "sourceTitle": "Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police"
+    },
+    "lead": {
+      "label": "Yesterday · 3 Aug 2026",
+      "title": "Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt",
+      "summary": "MaltaToday’s completed daily report is led by: “Yorgen Fenech trial: Jurors return to Hall 22 as high-stakes proceedings resume - maltatoday.com.mt”."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": []
   }
 ];
