@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
   "title": "LIVE | Yorgen Fenech jury trial day 30: More prosecution witnesses expected to testify on Tuesday",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143606/yorgen_fenech_jury_trial_day_30_more_prosecution_witnesses_expected_to_testify_on_tuesday_",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSWI0MndzcC1tMm1oM1VQelI1aDBzLWh5YzBtZ0d3ckc4XzVIRm9LVmtoT2o0SzJ5VVZHN3RRa0trU09EM2NrQ0JONUtfME03bk5vd2NFUVJpZ0oyTEc5Nm9JU2I1U0t5UWdwYk9KanJpYUJvZ2hyNEZ0TEFOSHRxR09kMzdxUnZMNFZxdDZzQkF0Z0RfNURPZjBuQjd0b1lSNjNmV2FfTkw0QUpmSUM5WHFWSjdGYnlPMTlBOG1tLUFUR2phdWJTUHdyR0MtNElBMGdxblJmMkNpTG1XOWozZzFZTQ?oc=5",
   "date": "4 August 2026"
 };
 window.DAILY_UPDATES = [
