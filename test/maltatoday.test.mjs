@@ -26,6 +26,11 @@ test("recognises a completed sitting after cleaning HTML", () => {
   assert.equal(isCompletedSitting("Proceedings will continue this afternoon"), false);
 });
 
+test("recognises MaltaToday wording that a trial was adjourned", () => {
+  assert.equal(isCompletedSitting("The trial is adjourned until Tuesday at 9am."), true);
+  assert.equal(isCompletedSitting("The day concluded with testimony from a police constable."), true);
+});
+
 test("parses the persistent update history", () => {
   const updates = parseStoredUpdates('window.DAILY_UPDATES = [{"day":{"day":26}}];\n');
   assert.equal(updates[0].day.day, 26);
