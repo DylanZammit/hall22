@@ -31,15 +31,24 @@ if (mode === "live") {
 }
 if (!apiKey) console.warn("OPENAI_API_KEY is unavailable; metadata fallback will be used.");
 let selected;
+const recoverySourceUrl = process.env.UPDATE_SOURCE_URL;
+if (recoverySourceUrl) {
+  const articleHtml = await fetchPage(recoverySourceUrl);
+  const articleText = cleanArticle(articleHtml);
+  if (!isCompletedSitting(articleText)) throw new Error(`Recovery source is not a completed sitting: ${recoverySourceUrl}`);
+  selected = { sourceUrl: recoverySourceUrl, articleHtml, articleText };
+}
 try {
-  const categoryHtml = await fetchPage(CATEGORY);
-  const links = discoverTrialLinks(categoryHtml);
-  for (const sourceUrl of links.slice(0, 5)) {
-    const articleHtml = await fetchPage(sourceUrl);
-    const articleText = cleanArticle(articleHtml);
-    if (isCompletedSitting(articleText)) {
-      selected = { sourceUrl, articleHtml, articleText };
-      break;
+  if (!selected) {
+    const categoryHtml = await fetchPage(CATEGORY);
+    const links = discoverTrialLinks(categoryHtml);
+    for (const sourceUrl of links.slice(0, 5)) {
+      const articleHtml = await fetchPage(sourceUrl);
+      const articleText = cleanArticle(articleHtml);
+      if (isCompletedSitting(articleText)) {
+        selected = { sourceUrl, articleHtml, articleText };
+        break;
+      }
     }
   }
 } catch (error) {
@@ -51,7 +60,19 @@ if (!selected) {
     console.log("No completed MaltaToday sitting is indexed yet; leaving the site unchanged.");
     process.exit(0);
   }
-  selected = { indexed: true, sourceUrl: CATEGORY, articleText: indexed.title, indexedTitle: indexed.title, published: indexed.published };
+  if (/^https:\/\/www\.maltatoday\.com\.mt\/news\/court_and_police\/\d+\//i.test(indexed.sourceUrl || "")) {
+    try {
+      const articleHtml = await fetchPage(indexed.sourceUrl);
+      const articleText = cleanArticle(articleHtml);
+      if (isCompletedSitting(articleText)) selected = { sourceUrl: indexed.sourceUrl, articleHtml, articleText };
+    } catch (error) {
+      console.warn(`Indexed MaltaToday report could not be retrieved (${error.message}).`);
+    }
+  }
+  if (!selected) {
+    console.log("A MaltaToday headline is indexed, but the completed report could not be verified; leaving the site unchanged.");
+    process.exit(0);
+  }
 }
 if (isDuplicateUpdate(storedUpdates, selected)) {
   if (parseLiveUpdate(previousSource)) {
@@ -86,9 +107,7 @@ const response = selected.indexed || !apiKey ? null : await fetch("https://api.o
   })
 });
 let update;
-if (selected.indexed) {
-  update = indexedFallbackUpdate(selected, previousDay);
-} else if (response?.ok) {
+if (response?.ok) {
   const result = await response.json();
   const outputText = result.output?.flatMap(item => item.content || []).find(item => item.type === "output_text")?.text;
   if (!outputText) throw new Error("OpenAI returned no structured output");
@@ -184,22 +203,6 @@ function fallbackUpdate(html, text, sourceUrl, previousDay) {
       title: title.replace(/^LIVE\s*[|︱:-]*\s*/i, ""),
       summary: description
     },
-    peopleUpdates: [],
-    relationUpdates: []
-  };
-}
-
-function indexedFallbackUpdate(selected, previousDay) {
-  const date = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", timeZone: "Europe/Malta" }).format(selected.published);
-  const title = selected.indexedTitle.replace(/^LIVE\s*[|︱:-]*\s*/i, "");
-  return {
-    day: {
-      day: previousDay + 1, date, type: "testimony", title,
-      summary: `MaltaToday’s completed daily report is led by: “${title}”.`,
-      points: [title, "The update was recovered from MaltaToday’s indexed headline after its site blocked the automation runner.", "No allegation reported in court is treated as a finding of fact."],
-      sourceTitle: selected.indexedTitle
-    },
-    lead: { label: `Yesterday · ${date} 2026`, title, summary: `MaltaToday’s completed daily report is led by: “${title}”.` },
     peopleUpdates: [],
     relationUpdates: []
   };

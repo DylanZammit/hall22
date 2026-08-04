@@ -65,7 +65,7 @@ Manual runs offer `auto`, `live` and `completed` modes. `auto` chooses live mode
 
 ## Retrieval and fallback behaviour
 
-The updater first requests MaltaToday directly with browser-like headers and retries. It can also use a Google Translate relay because MaltaToday may return HTTP 403 to GitHub-hosted runners. If full-page retrieval remains unavailable, it checks Google News’ index for a same-day MaltaToday headline.
+The updater first requests MaltaToday directly with browser-like headers and retries. It can also use a Google Translate relay because MaltaToday may return HTTP 403 to GitHub-hosted requests. If full-page retrieval remains unavailable, it checks Google News’ index for a same-day MaltaToday headline. An indexed headline may supply the morning live banner, but the evening updater only records a completed sitting after retrieving the MaltaToday article itself and verifying that the session ended.
 
 When full article text and a working OpenAI API key are available, the updater requests schema-constrained output for the summary and relationship changes. If the API is unavailable or out of quota, it uses conservative MaltaToday metadata instead. Headline-only fallbacks never invent graph relationships.
 
