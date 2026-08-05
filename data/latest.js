@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech jury trial: Psychiatrists describe Melvin Theuma’s suicide attempt",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbjhud18ySGNjNHNYdTd5WEFkVnhJVFdCQVg5Rm5rRk9xblRMVlFQc0ktbzZmVi1lMGt0VTZvTUdfMnFQNmh4UDBSMWEwdkhuSGtMQk9LcGNrRmtPRkpEUDZQTnM1eGxobWU2WFNjZEhSa0ktbDg1cDZRalZ2aFVjYVlKOUVCOXdBY3k5SXh1YjlZTDNuUmtlS3hZZWVRVzJ0TDRZeGtKXy1Xc19fWWFVMldLNHhaX1pPR2x4OFcxU3BoMnVJdUwwWWVJbGpZOEVobE15YUtZWkp6UER5MkFOeHdGNVFmbTd6?oc=5",
-  "date": "5 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -260,6 +256,133 @@ window.DAILY_UPDATES = [
         "tone": -1,
         "context": "Sammut testified about emails allegedly extracted from Fenech’s laptop concerning weapons, ammunition, a suppressor, cyanide and Bitcoin payments; the defence disputed their relevance and verification.",
         "days": "Day 30"
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 31,
+      "date": "5 Aug",
+      "type": "testimony",
+      "title": "Psychiatrists assess Theuma as jurors examine conversations from Fenech’s devices",
+      "summary": "Three psychiatrists told jurors that Melvin Theuma experienced anxiety, depression and remorse following his 2020 suicide attempt but remained mentally fit to testify. Inspector Brian Paul Camilleri later described the police task force’s analysis of data extracted by Europol, including group chats and conversations involving Yorgen Fenech and several public figures.",
+      "points": [
+        "Psychiatrists said Theuma was mentally fit to testify despite anxiety and depression",
+        "The defence questioned whether the doctors had independently verified information Theuma provided",
+        "Jurors were shown group chats and conversations recovered from Fenech’s devices while the defence raised relevance and privilege objections"
+      ],
+      "sourceTitle": "Yorgen Fenech jury trial: Psychiatrists find Melvin Theuma fit to testify in jury proceedings",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143632/yorgen_fenech_jury_trial_enters_day_31_as_prosecution_expected_to_continue_presenting_evidence"
+    },
+    "lead": {
+      "label": "Today · 5 Aug 2026",
+      "title": "Psychiatrists found Theuma fit to testify before jurors examined conversations from Fenech’s devices.",
+      "summary": "The doctors discussed Theuma’s mental health following his suicide attempt, while later testimony focused on electronic evidence analysed by a police task force and the defence challenged parts of that evidence."
+    },
+    "peopleUpdates": [
+      {
+        "name": "Jean Pierre Giorgio",
+        "role": "psychiatrist / witness",
+        "bio": "One of three psychiatrists who assessed Melvin Theuma after his 2020 suicide attempt and testified that he remained mentally fit to give evidence."
+      },
+      {
+        "name": "Ethel Felice",
+        "role": "psychiatrist / witness",
+        "bio": "One of three psychiatrists who assessed Melvin Theuma’s mental condition and testified about his anxiety, depression and fitness to give evidence."
+      },
+      {
+        "name": "George Debono",
+        "role": "psychiatrist / witness",
+        "bio": "One of three psychiatrists who evaluated Melvin Theuma following his suicide attempt and testified during Day 31."
+      },
+      {
+        "name": "Brian Paul Camilleri",
+        "role": "financial-crimes investigator / witness",
+        "bio": "Police inspector who supervised analytical work by a task force examining data extracted from electronic devices seized during the investigation."
+      },
+      {
+        "name": "Joseph Muscat",
+        "role": "former prime minister",
+        "bio": "Former prime minister named among participants in group chats recovered from Yorgen Fenech’s devices and presented during Day 31."
+      },
+      {
+        "name": "Rosianne Cutajar",
+        "role": "member of parliament",
+        "bio": "Member of parliament whose conversations with Yorgen Fenech were among electronic material presented to the jury during Day 31."
+      }
+    ],
+    "relationUpdates": [
+      {
+        "from": "Jean Pierre Giorgio",
+        "to": "Melvin Theuma",
+        "count": 5,
+        "tone": 0,
+        "context": "Giorgio testified with two other psychiatrists about Theuma’s mental condition after his suicide attempt and their conclusion that he was fit to testify.",
+        "days": "Day 31"
+      },
+      {
+        "from": "Ethel Felice",
+        "to": "Melvin Theuma",
+        "count": 5,
+        "tone": 0,
+        "context": "Felice testified about Theuma’s anxiety, depression and assessment following his 2020 suicide attempt.",
+        "days": "Day 31"
+      },
+      {
+        "from": "George Debono",
+        "to": "Melvin Theuma",
+        "count": 5,
+        "tone": 0,
+        "context": "Debono testified as part of the psychiatric team that assessed Theuma and found him mentally fit to give evidence.",
+        "days": "Day 31"
+      },
+      {
+        "from": "Brian Paul Camilleri",
+        "to": "Yorgen Fenech",
+        "count": 10,
+        "tone": 0,
+        "context": "Camilleri described the task force’s analysis of group chats and conversations recovered from Fenech’s electronic devices.",
+        "days": "Day 31"
+      },
+      {
+        "from": "Brian Paul Camilleri",
+        "to": "Silvio Valletta",
+        "count": 3,
+        "tone": 0,
+        "context": "Camilleri was questioned about the ‘No Valletta, No Party’ and ‘Sassicaia’ chats and whether Valletta should have remained involved in the investigation.",
+        "days": "Day 31"
+      },
+      {
+        "from": "Brian Paul Camilleri",
+        "to": "Keith Schembri",
+        "count": 2,
+        "tone": 0,
+        "context": "Schembri appeared in group-chat evidence, and Camilleri said the task force never possessed Schembri’s personal mobile phone.",
+        "days": "Day 31"
+      },
+      {
+        "from": "Brian Paul Camilleri",
+        "to": "Joseph Muscat",
+        "count": 2,
+        "tone": 0,
+        "context": "Muscat was identified among the participants in group chats recovered from Fenech’s devices.",
+        "days": "Day 31"
+      },
+      {
+        "from": "Brian Paul Camilleri",
+        "to": "Rosianne Cutajar",
+        "count": 3,
+        "tone": 0,
+        "context": "The court was led through conversations involving Cutajar, and Camilleri was questioned about whether he forwarded them to his superiors.",
+        "days": "Day 31"
+      },
+      {
+        "from": "Brian Paul Camilleri",
+        "to": "Konrad Mizzi",
+        "count": 2,
+        "tone": 0,
+        "context": "Mizzi was named among public figures whose conversations with Fenech were presented to jurors.",
+        "days": "Day 31"
       }
     ]
   }
