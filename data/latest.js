@@ -228,7 +228,7 @@ window.DAILY_UPDATES = [
       {
         "from": "Logan Wood",
         "to": "Yorgen Fenech",
-        "count": 10,
+        "count": 3,
         "tone": 0,
         "context": "Wood described Fenech’s instructions before the November 2019 yacht departure, including bringing the trip forward, switching off tracking and checking that the coast was clear.",
         "days": "Day 30"

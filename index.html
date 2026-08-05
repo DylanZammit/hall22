@@ -65,7 +65,10 @@
       <div class="network-legend">
         <span><i class="hostile"></i> hostile / adverse</span><span><i class="neutral"></i> neutral / mixed</span><span><i class="friendly"></i> friendly / supportive</span><span class="weight-demo">line thickness = connection mentions</span><span>circle size = total mapped mentions</span>
       </div>
-      <div class="interaction-cue"><span>↗ Interactive</span><strong>Click a circle</strong> for a person’s profile <b>or</b> <strong>click a line</strong> for details about that connection.</div>
+      <div class="network-tools">
+        <div class="interaction-cue"><span>↗ Interactive</span><strong>Click a circle</strong> for a person’s profile <b>or</b> <strong>click a line</strong> for details about that connection.</div>
+        <button id="people-visibility" type="button" aria-pressed="true"><span>Show all people</span><small>Under 8 mapped mentions hidden</small></button>
+      </div>
       <div class="network-wrap">
         <div class="network-canvas" tabindex="0" aria-label="Scrollable relationship diagram">
           <svg id="network-svg" viewBox="0 0 1100 820" role="img" aria-label="Relationship diagram of people mentioned during the trial"></svg>
