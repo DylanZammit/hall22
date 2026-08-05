@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech jury trial day 30: More prosecution witnesses expected to testify on Tuesday",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSWI0MndzcC1tMm1oM1VQelI1aDBzLWh5YzBtZ0d3ckc4XzVIRm9LVmtoT2o0SzJ5VVZHN3RRa0trU09EM2NrQ0JONUtfME03bk5vd2NFUVJpZ0oyTEc5Nm9JU2I1U0t5UWdwYk9KanJpYUJvZ2hyNEZ0TEFOSHRxR09kMzdxUnZMNFZxdDZzQkF0Z0RfNURPZjBuQjd0b1lSNjNmV2FfTkw0QUpmSUM5WHFWSjdGYnlPMTlBOG1tLUFUR2phdWJTUHdyR0MtNElBMGdxblJmMkNpTG1XOWozZzFZTQ?oc=5",
-  "date": "4 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -175,6 +171,91 @@ window.DAILY_UPDATES = [
         "tone": 0,
         "context": "Cutajar said documents referring to Theuma were among those seized during the Portomaso office search.",
         "days": "Day 29"
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 30,
+      "date": "4 Aug",
+      "type": "testimony",
+      "title": "Messages, disputed email evidence and Fenech’s attempted departure dominate Day 30",
+      "summary": "Jurors saw messages between Yorgen Fenech and former deputy police commissioner Silvio Valletta, as well as emails allegedly concerning weapons and cyanide whose relevance and reliability were challenged by the defence. Former yacht captain Logan Wood then described the preparations for Fenech’s attempted departure from Malta in November 2019.",
+      "points": [
+        "Messages showed Valletta describing Fenech as his best friend and offering reassurance",
+        "The court admitted disputed emails allegedly concerning weapons and cyanide, despite defence objections",
+        "Logan Wood described instructions to advance a Sicily trip, disable yacht tracking and check that the coast was clear"
+      ],
+      "sourceTitle": "‘We’ll be right behind you’: Silvio Valletta told Yorgen Fenech in shocking messages shown to jury",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143606/yorgen_fenech_jury_trial_day_30_more_prosecution_witnesses_expected_to_testify_on_tuesday_"
+    },
+    "lead": {
+      "label": "Yesterday · 4 Aug 2026",
+      "title": "Jurors saw Valletta’s messages to Fenech and heard how Fenech prepared to leave Malta by yacht.",
+      "summary": "The sitting examined communications between Fenech and former deputy police commissioner Silvio Valletta, disputed emails extracted from a laptop and Logan Wood’s account of the yacht journey that ended when armed forces patrol boats intercepted them."
+    },
+    "peopleUpdates": [
+      {
+        "name": "Silvio Valletta",
+        "role": "former deputy police commissioner",
+        "bio": "Former deputy police commissioner whose messages and personal relationship with Yorgen Fenech were presented to the jury during Day 30."
+      },
+      {
+        "name": "Logan Wood",
+        "role": "former yacht captain / witness",
+        "bio": "Former captain of Fenech’s yachts who testified about preparations for and the intercepted November 2019 journey from Portomaso."
+      },
+      {
+        "name": "Josef Gerada",
+        "role": "police forensic witness",
+        "bio": "Police sergeant who testified about recordings, photographs and messages extracted from Melvin Theuma’s electronic devices."
+      },
+      {
+        "name": "Sven Sammut",
+        "role": "police forensic witness",
+        "bio": "Police constable who testified about emails allegedly extracted from a laptop seized during the investigation."
+      }
+    ],
+    "relationUpdates": [
+      {
+        "from": "Silvio Valletta",
+        "to": "Yorgen Fenech",
+        "count": 10,
+        "tone": 1,
+        "context": "Messages shown to jurors covered football trips, meetings and personal matters, with Valletta calling Fenech his best friend and saying they would be behind him.",
+        "days": "Day 30"
+      },
+      {
+        "from": "Logan Wood",
+        "to": "Yorgen Fenech",
+        "count": 10,
+        "tone": 0,
+        "context": "Wood described Fenech’s instructions before the November 2019 yacht departure, including bringing the trip forward, switching off tracking and checking that the coast was clear.",
+        "days": "Day 30"
+      },
+      {
+        "from": "Josef Gerada",
+        "to": "Yorgen Fenech",
+        "count": 6,
+        "tone": 0,
+        "context": "Gerada identified recordings and disappearing messages between Fenech and Melvin Theuma recovered during forensic examination.",
+        "days": "Day 30"
+      },
+      {
+        "from": "Josef Gerada",
+        "to": "Melvin Theuma",
+        "count": 6,
+        "tone": 0,
+        "context": "Gerada described material extracted from Theuma’s devices, including messages, recordings, photographs and references to other items and people.",
+        "days": "Day 30"
+      },
+      {
+        "from": "Sven Sammut",
+        "to": "Yorgen Fenech",
+        "count": 6,
+        "tone": -1,
+        "context": "Sammut testified about emails allegedly extracted from Fenech’s laptop concerning weapons, ammunition, a suppressor, cyanide and Bitcoin payments; the defence disputed their relevance and verification.",
+        "days": "Day 30"
       }
     ]
   }
