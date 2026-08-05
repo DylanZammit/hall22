@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech jury trial: Psychiatrists describe Melvin Theuma’s suicide attempt",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbjhud18ySGNjNHNYdTd5WEFkVnhJVFdCQVg5Rm5rRk9xblRMVlFQc0ktbzZmVi1lMGt0VTZvTUdfMnFQNmh4UDBSMWEwdkhuSGtMQk9LcGNrRmtPRkpEUDZQTnM1eGxobWU2WFNjZEhSa0ktbDg1cDZRalZ2aFVjYVlKOUVCOXdBY3k5SXh1YjlZTDNuUmtlS3hZZWVRVzJ0TDRZeGtKXy1Xc19fWWFVMldLNHhaX1pPR2x4OFcxU3BoMnVJdUwwWWVJbGpZOEVobE15YUtZWkp6UER5MkFOeHdGNVFmbTd6?oc=5",
+  "date": "5 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
