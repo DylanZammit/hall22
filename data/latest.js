@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech trial day 32: More prosecution witnesses set to take the stand",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVEZ3VGg2S1VNMWs4T1FrOTN6Q1lrbDVxdk8xXy1rSWNNZU52LXhCYTVXc0pSU1lrbFRIZVRkc1JVXzZWRmkxTVNDZU5pZUJUVWJWeUJRdkRCcm44YS1tUjA4Wjl0dVo0bXhWSzlSRFBQV3NsbUpVWVg4dVM4Z3RHNlFLRXpWaDNpdURGaUR6RWFrSEtLNlA1UGFQVVZUY0pBVWw2OHhYNHdLX1VyTHpxcEVJRnF6MlcyaldBdVp3b1RUTk1NTFBYVzFSSUkzWEZM?oc=5",
+  "date": "6 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
