@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial day 32: More prosecution witnesses set to take the stand",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVEZ3VGg2S1VNMWs4T1FrOTN6Q1lrbDVxdk8xXy1rSWNNZU52LXhCYTVXc0pSU1lrbFRIZVRkc1JVXzZWRmkxTVNDZU5pZUJUVWJWeUJRdkRCcm44YS1tUjA4Wjl0dVo0bXhWSzlSRFBQV3NsbUpVWVg4dVM4Z3RHNlFLRXpWaDNpdURGaUR6RWFrSEtLNlA1UGFQVVZUY0pBVWw2OHhYNHdLX1VyTHpxcEVJRnF6MlcyaldBdVp3b1RUTk1NTFBYVzFSSUkzWEZM?oc=5",
-  "date": "6 August 2026"
+  "title": "LIVE | Yorgen Fenech trial: Adrian Vella to return to witness stand today for cross-examination",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143662/yorgen_fenech_trial_adrian_vella_to_return_to_witness_stand_today_for_crossexamination",
+  "date": "7 August 2026"
 };
 window.DAILY_UPDATES = [
   {
@@ -387,6 +387,76 @@ window.DAILY_UPDATES = [
         "tone": 0,
         "context": "Mizzi was named among public figures whose conversations with Fenech were presented to jurors.",
         "days": "Day 31"
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 32,
+      "date": "6 Aug",
+      "type": "testimony",
+      "title": "Adrian Vella’s testimony is tested against his 2019 police statements",
+      "summary": "Doctor Adrian Vella described Yorgen Fenech’s condition and a trip to Gozo shortly before his arrest, as well as collecting documents from Keith Schembri’s home. Prosecutors and the defence repeatedly compared his evidence with statements he gave police in 2019, while Vella often said he could no longer remember the details.",
+      "points": [
+        "Vella described concern about Fenech’s cocaine use and mental state before taking him to Gozo",
+        "He said Schembri gave him four documents to take to Fenech, an account Schembri has denied",
+        "Questioning highlighted differences between Vella’s testimony and his November 2019 police statements"
+      ],
+      "sourceTitle": "Yorgen Fenech trial: Adrian Vella’s testimony and memory tested against police statements",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143648/yorgen_fenech_trial_day_32_more_prosecution_witnesses_set_to_take_the_stand_"
+    },
+    "lead": {
+      "label": "Yesterday · 6 Aug 2026",
+      "title": "Adrian Vella’s account was repeatedly compared with what he told police in 2019.",
+      "summary": "Vella described taking Fenech to Gozo, trying to find him legal representation and later collecting documents from Schembri’s home. Much of the sitting focused on inconsistencies, memory gaps and the personal impact the investigation had on the witness."
+    },
+    "peopleUpdates": [
+      {
+        "name": "Franco Fenech",
+        "role": "accused’s brother",
+        "bio": "Yorgen Fenech’s brother, who was present in Gozo during events described by Adrian Vella and was mentioned during questioning about calls and conversations."
+      }
+    ],
+    "relationUpdates": [
+      {
+        "from": "Adrian Vella",
+        "to": "Yorgen Fenech",
+        "count": 10,
+        "tone": 0,
+        "context": "Vella described treating Fenech, taking him to Gozo, attempting to find legal representation and later delivering documents; his recollection was tested against his police statements.",
+        "days": "Day 32"
+      },
+      {
+        "from": "Adrian Vella",
+        "to": "Keith Schembri",
+        "count": 10,
+        "tone": 0,
+        "context": "Vella described frequent contact with Schembri and maintained that Schembri directed him to collect four documents from his home, an account Schembri has denied.",
+        "days": "Day 32"
+      },
+      {
+        "from": "Adrian Vella",
+        "to": "Franco Fenech",
+        "count": 4,
+        "tone": 0,
+        "context": "Vella said Franco was with his brother in Gozo and participated in private calls and conversations whose details were disputed during cross-examination.",
+        "days": "Day 32"
+      },
+      {
+        "from": "Adrian Vella",
+        "to": "Keith Arnaud",
+        "count": 2,
+        "tone": 0,
+        "context": "Vella recalled being questioned at police headquarters by Arnaud and other senior investigators after police arrived at his home.",
+        "days": "Day 32"
+      },
+      {
+        "from": "Adrian Vella",
+        "to": "Lawrence Cutajar",
+        "count": 2,
+        "tone": 0,
+        "context": "Vella named Cutajar among the senior officers present when he was questioned at police headquarters.",
+        "days": "Day 32"
       }
     ]
   }
