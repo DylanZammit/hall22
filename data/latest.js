@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
   "title": "LIVE | Yorgen Fenech jury trial: Star witness and murder middleman Melvin Theuma begins testimony",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOUVlWRlhSaF9fUW0xWTJBZW5zMkEyeWhWclhxeEJRUUtHSHd3bUU5RWVac3UwczJqZE5NMVFMeTBGTnhGNndLUFd5MkVvbnZxSXMxX1R0a0lpQm1rVWdvZnFpS1pTRkRFaXVoS2w1azN5Q2xiaHZBZ0tQVy1CUEplQm9aOGM4Y2NkaFJFTGxmREdmODFtSG95anBSb0F2ckxQZlJydEhMRE5Ka0lveDBWY294NUp0ZU45UXhTaEUtVWpGYk1RR3dFSk9ja0JUUmNRUXBvaUt3UXNmUkRTaEFv?oc=5",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143662/yorgen_fenech_trial_adrian_vella_to_return_to_witness_stand_today_for_crossexamination",
   "date": "7 August 2026"
 };
 window.DAILY_UPDATES = [
