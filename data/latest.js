@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech jury trial: Star witness and murder middleman Melvin Theuma begins testimony",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143662/yorgen_fenech_trial_adrian_vella_to_return_to_witness_stand_today_for_crossexamination",
-  "date": "7 August 2026"
+  "title": "LIVE | Yorgen Fenech trial: Melvin Theuma continues his testimony, marking the 34th day",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143676/yorgen_fenech_trial_melvin_theuma_continues_his_testimony_marking_the_34th_day",
+  "date": "8 August 2026"
 };
 window.DAILY_UPDATES = [
   {
@@ -457,6 +457,86 @@ window.DAILY_UPDATES = [
         "tone": 0,
         "context": "Vella named Cutajar among the senior officers present when he was questioned at police headquarters.",
         "days": "Day 32"
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 33,
+      "date": "7 Aug",
+      "type": "testimony",
+      "title": "Theuma alleges Fenech alone commissioned the assassination",
+      "summary": "State witness Melvin Theuma gave a detailed account of how he says Yorgen Fenech instructed him to organise Daphne Caruana Galizia’s murder, supplied the money and pressured him to hurry the Degiorgio brothers. He also described payments after the assassination, his fear that he would be killed and why he secretly recorded conversations with Fenech.",
+      "points": [
+        "Theuma alleged Fenech gave him €150,000 and instructed him to arrange the killing through Alfred Degiorgio",
+        "He described maintaining and financing contact with the Degiorgio brothers after the assassination",
+        "Theuma said fear for his life led him to secretly record Fenech and preserve the recordings as protection"
+      ],
+      "sourceTitle": "‘There was only one mastermind’: Melvin Theuma insists Yorgen Fenech alone ordered the assassination",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143662/yorgen_fenech_trial_adrian_vella_to_return_to_witness_stand_today_for_crossexamination"
+    },
+    "lead": {
+      "label": "Yesterday · 7 Aug 2026",
+      "title": "Theuma alleged that Fenech alone commissioned and financed the assassination.",
+      "summary": "In emotional testimony, the pardoned middleman described the alleged murder instructions, cash payments, pressure placed on the Degiorgio brothers and the fear that prompted his secret recordings. Fenech has pleaded not guilty, and Theuma’s account remains testimony for the jury to assess."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": [
+      {
+        "from": "Melvin Theuma",
+        "to": "Yorgen Fenech",
+        "count": 10,
+        "tone": -1,
+        "context": "Theuma alleged that Fenech instructed and financed the murder, pressured him to hurry the plot and later reimbursed payments; Fenech denies the charges.",
+        "days": "Day 33"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Alfred Degiorgio",
+        "count": 10,
+        "tone": 0,
+        "context": "Theuma described approaching Alfred to arrange the killing, paying a deposit and maintaining financial contact after the assassination.",
+        "days": "Day 33"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "George Degiorgio",
+        "count": 6,
+        "tone": 0,
+        "context": "Theuma said he financed prison and legal expenses connected with the Degiorgio brothers and George’s partner after the murder.",
+        "days": "Day 33"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Keith Schembri",
+        "count": 5,
+        "tone": 0,
+        "context": "Theuma distanced Schembri from ordering or financing the killing while maintaining that Fenech claimed Schembri supplied information after it.",
+        "days": "Day 33"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Daphne Caruana Galizia",
+        "count": 6,
+        "tone": -1,
+        "context": "Theuma recounted his alleged role in arranging her assassination and described his guilt, remorse and continuing apologies to her family.",
+        "days": "Day 33"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Johann Cremona",
+        "count": 3,
+        "tone": 0,
+        "context": "Theuma said he deliberately allowed Cremona to learn about the recordings because he expected the information would reach Fenech.",
+        "days": "Day 33"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Vince Muscat",
+        "count": 2,
+        "tone": 0,
+        "context": "Theuma said learning that Muscat had begun speaking to police contributed to his decision to record Fenech.",
+        "days": "Day 33"
       }
     ]
   }
