@@ -1,5 +1,5 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Melvin Theuma continues his testimony, marking the 34th day",
+  "title": "LIVE | Yorgen Fenech trial: Theuma says he was tipped off about arrest, promised police leaks",
   "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPLVRFUnJxYldBYk5obmJ4dHlaRUJKdDFYeC1EN05xa0xzQVQ1ZENfaGhDeHhoeWpma0JSYk84QXpBVUJOTVZKVm1Gd0MwT0RxSHRkTkxjMTFha0JmNjlKNGoxYjF2NVlPNWdyd3NBUHVtRHp2Y1gtckt5N0FaZlBtNl9IRTBNZHRqWlRDUWxVYzZuZmRpR0dRVy12NVpTaDRxYWRFM05SaWw2SVJRRnZ6UG5sZS0yTm1VcndSTUQzUzZWQXJBd256RlpqdV85Q0QwNTR3?oc=5",
   "date": "8 August 2026"
 };
