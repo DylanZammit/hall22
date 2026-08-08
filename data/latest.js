@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Melvin Theuma continues his testimony, marking the 34th day",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143676/yorgen_fenech_trial_melvin_theuma_continues_his_testimony_marking_the_34th_day",
+  "title": "LIVE | Yorgen Fenech trial: Melvin Theuma continues his testimony, marking the 34th day - maltatoday.com.mt",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPLVRFUnJxYldBYk5obmJ4dHlaRUJKdDFYeC1EN05xa0xzQVQ1ZENfaGhDeHhoeWpma0JSYk84QXpBVUJOTVZKVm1Gd0MwT0RxSHRkTkxjMTFha0JmNjlKNGoxYjF2NVlPNWdyd3NBUHVtRHp2Y1gtckt5N0FaZlBtNl9IRTBNZHRqWlRDUWxVYzZuZmRpR0dRVy12NVpTaDRxYWRFM05SaWw2SVJRRnZ6UG5sZS0yTm1VcndSTUQzUzZWQXJBd256RlpqdV85Q0QwNTR3?oc=5",
   "date": "8 August 2026"
 };
 window.DAILY_UPDATES = [
