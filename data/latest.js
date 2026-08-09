@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Theuma says he was tipped off about arrest, promised police leaks",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143676/yorgen_fenech_trial_melvin_theuma_continues_his_testimony_marking_the_34th_day",
-  "date": "8 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -537,6 +533,139 @@ window.DAILY_UPDATES = [
         "tone": 0,
         "context": "Theuma said learning that Muscat had begun speaking to police contributed to his decision to record Fenech.",
         "days": "Day 33"
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 34,
+      "date": "8 Aug",
+      "type": "testimony",
+      "title": "Jurors hear recordings as Theuma explains alleged efforts to contain the fallout",
+      "summary": "Jurors heard recordings in which Yorgen Fenech allegedly made violent remarks about Daphne Caruana Galizia and discussed possible prison terms. Melvin Theuma also testified about alleged efforts to stop Vince Muscat cooperating with police, continuing payments and pressure involving the Degiorgio brothers, and the fallout after Fenech discovered the secret recordings.",
+      "points": [
+        "Recordings captured remarks attributed to Fenech about the victim and possible prison sentences",
+        "Theuma alleged that threats and a prison confrontation were organised after Vince Muscat began speaking to police",
+        "Further recordings covered payments, bail pressure, alleged information leaks and Fenech discovering Theuma’s tapes"
+      ],
+      "sourceTitle": "‘I would throw her from the balcony’: Fenech’s violent remarks after assassination exposed",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143676/yorgen_fenech_trial_melvin_theuma_continues_his_testimony_marking_the_34th_day"
+    },
+    "lead": {
+      "label": "Yesterday · 8 Aug 2026",
+      "title": "Recordings exposed violent remarks and alleged efforts to contain the murder investigation’s fallout.",
+      "summary": "Theuma explained recordings concerning prison exposure, payments, pressure on Vince Muscat and the Degiorgio brothers, and alleged leaks from government and police circles. Fenech has pleaded not guilty, and the recorded material and Theuma’s account remain evidence for the jury to assess."
+    },
+    "peopleUpdates": [
+      {
+        "name": "Arthur Azzopardi",
+        "role": "former lawyer to Vince Muscat",
+        "bio": "Lawyer who represented Vince Muscat until alleged intimidation described by Melvin Theuma led him to release Muscat as a client."
+      },
+      {
+        "name": "Mario Degiorgio",
+        "role": "Degiorgio family member",
+        "bio": "Brother of George and Alfred Degiorgio who, according to Theuma’s testimony, repeatedly sought money and information concerning their bail."
+      },
+      {
+        "name": "Owen Bonnici",
+        "role": "former minister",
+        "bio": "Former minister named in recorded exchanges concerning discussions about Vince Muscat’s request for a pardon."
+      },
+      {
+        "name": "David Casa",
+        "role": "member of the European Parliament",
+        "bio": "MEP whom Theuma alleged Fenech sought to prevent from being re-elected because of Casa’s reporting on 17 Black."
+      }
+    ],
+    "relationUpdates": [
+      {
+        "from": "Melvin Theuma",
+        "to": "Yorgen Fenech",
+        "count": 10,
+        "tone": -1,
+        "context": "Theuma authenticated and explained recordings containing remarks attributed to Fenech about the victim, prison exposure, payments and the murder investigation; Fenech denies the charges.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Vince Muscat",
+        "count": 6,
+        "tone": -1,
+        "context": "Theuma described alleged coordinated efforts to stop Muscat cooperating with police, including threats against his lawyer and a confrontation in prison.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Johann Cremona",
+        "count": 5,
+        "tone": 0,
+        "context": "Theuma referred to Cremona’s alleged role in communicating information, arranging intimidation and reacting after Theuma briefly switched off his phone.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Keith Schembri",
+        "count": 5,
+        "tone": 0,
+        "context": "Theuma explained recorded claims that Schembri leaked information about Cabinet and the investigation, while also quoting Fenech as saying Schembri could not stop the case.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "George Degiorgio",
+        "count": 6,
+        "tone": 0,
+        "context": "Theuma discussed payments, bail pressure and recordings involving the Degiorgio brothers after the assassination.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Alfred Degiorgio",
+        "count": 6,
+        "tone": 0,
+        "context": "Theuma discussed payments, bail pressure and warnings connected with the Degiorgio brothers after Vince Muscat began speaking to police.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Silvio Valletta",
+        "count": 3,
+        "tone": 0,
+        "context": "Theuma explained recorded allegations that confidential information reached Valletta and described Valletta’s reaction when Theuma became unreachable.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Arthur Azzopardi",
+        "count": 2,
+        "tone": -1,
+        "context": "Theuma alleged that intimidation was organised against Azzopardi after his client Vince Muscat began cooperating with police.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Mario Degiorgio",
+        "count": 3,
+        "tone": 0,
+        "context": "Theuma said Mario repeatedly pressed him for money and updates concerning his brothers’ bail application.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Owen Bonnici",
+        "count": 2,
+        "tone": 0,
+        "context": "Bonnici was named in recorded exchanges concerning discussions about Vince Muscat’s pardon request.",
+        "days": "Day 34"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "David Casa",
+        "count": 2,
+        "tone": -1,
+        "context": "Theuma repeated an allegation that Fenech offered political funding to prevent Casa’s re-election because of his work on 17 Black.",
+        "days": "Day 34"
       }
     ]
   }
