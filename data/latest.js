@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
   "title": "LIVE | Yorgen Fenech trial enters sixth week as Melvin Theuma returns for fourth day of testimony",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143710/yorgen_fenech_trial_enters_sixth_week_as_melvin_theuma_returns_for_fourth_day_of_testimony",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOaDZqYU9VZldaQm5lUGxWNkRmN1FURTFFdGpQUV9YVW5TWS1DdTlFMVY4WWhyeEd6SGFkbHBlNkk1empIOUhJSG9vRVo5RXdGTXoxalpaWktFckxLUVlnekZrTXJOalE1Nm9qTDAtWHhhc1JxMHR6MnpHUThGVW9rcHByZlBIVzFlQ2JPaEFqRl9WeWxBMWk1MnlMX0JaN0tSdTJTT1BCTjY5RW01ME5QTFQ4SVNaRHo5OWNPMEwyeU9FaVJCQ1ZNanNEY1Ffc210X05nRm9sS1A2X0F4c0llblRadw?oc=5",
   "date": "11 August 2026"
 };
 window.DAILY_UPDATES = [
