@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial enters sixth week as Melvin Theuma returns for fourth day of testimony",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOaDZqYU9VZldaQm5lUGxWNkRmN1FURTFFdGpQUV9YVW5TWS1DdTlFMVY4WWhyeEd6SGFkbHBlNkk1empIOUhJSG9vRVo5RXdGTXoxalpaWktFckxLUVlnekZrTXJOalE1Nm9qTDAtWHhhc1JxMHR6MnpHUThGVW9rcHByZlBIVzFlQ2JPaEFqRl9WeWxBMWk1MnlMX0JaN0tSdTJTT1BCTjY5RW01ME5QTFQ4SVNaRHo5OWNPMEwyeU9FaVJCQ1ZNanNEY1Ffc210X05nRm9sS1A2X0F4c0llblRadw?oc=5",
-  "date": "11 August 2026"
+  "title": "LIVE | Yorgen Fenech trial: Defence to begin cross-examination of Melvin Theuma",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQ3NRZHFHeGFOOHg5MGZJb2hiTjVYREIxaVpTZUFVem1JNDJMbmwzVXdBeEpqLW9aaDM2WGJEODJjMXZ0di1naXFBbXZKZnhNZGxrYmRkTjRYNUF0NnZMSFpUU2Z0YWM5b1ZNYUdBeXdvNUN5MnFSaHBzb05UVkt2ZHppWG5iZmNoYzg5N1JCTEpJS1kzMEd4MktaUzB1cnI0QzBCd04xTGtZSVNMNEl3NUdiU25sMmctU2lVSXh2bDkza3RrSDVVbGFVdFhnQWhIZGc?oc=5",
+  "date": "12 August 2026"
 };
 window.DAILY_UPDATES = [
   {
