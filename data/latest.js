@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Melvin Theuma grilled on past crimes and relationships with criminals",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQ3NRZHFHeGFOOHg5MGZJb2hiTjVYREIxaVpTZUFVem1JNDJMbmwzVXdBeEpqLW9aaDM2WGJEODJjMXZ0di1naXFBbXZKZnhNZGxrYmRkTjRYNUF0NnZMSFpUU2Z0YWM5b1ZNYUdBeXdvNUN5MnFSaHBzb05UVkt2ZHppWG5iZmNoYzg5N1JCTEpJS1kzMEd4MktaUzB1cnI0QzBCd04xTGtZSVNMNEl3NUdiU25sMmctU2lVSXh2bDkza3RrSDVVbGFVdFhnQWhIZGc?oc=5",
+  "title": "LIVE | Yorgen Fenech trial: Melvin Theuma insists he lied when he named Keith Schembri as co-mastermind",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143730/live__yorgen_fenech_trial_defence_to_begin_crossexamination_of_melvin_theuma_",
   "date": "12 August 2026"
 };
 window.DAILY_UPDATES = [
@@ -671,6 +671,63 @@ window.DAILY_UPDATES = [
         "context": "Theuma repeated an allegation that Fenech offered political funding to prevent Casa’s re-election because of his work on 17 Black.",
         "days": "Day 34"
       }
+    ]
+  },
+  {
+    "day": {
+      "day": 35,
+      "date": "10 Aug",
+      "type": "testimony",
+      "title": "Theuma describes mounting financial pressure from the Degiorgios",
+      "summary": "Melvin Theuma told jurors that continuing demands from the Degiorgio brothers after the assassination left him feeling trapped and financially drained. Secret recordings also covered fears that the brothers might talk, further legal payments and claims about why Yorgen Fenech continued helping them.",
+      "points": [
+        "Theuma said demands continued after the alleged €150,000 murder payment",
+        "Recordings discussed money for bail, lawyers and other expenses",
+        "Theuma alleged Fenech helped the brothers because of the murder; Fenech denies the charges"
+      ],
+      "sourceTitle": "Yorgen Fenech trial: Theuma says Degiorgios made him feel extorted after financial demands post-murder",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143698/yorgen_fenech_trial_melvin_theuma_to_continue_testimony_after_explosive_recordings_heard_in_court"
+    },
+    "lead": {
+      "label": "Yesterday · 10 Aug 2026",
+      "title": "Theuma said the Degiorgios’ continuing demands left him caught between them and Fenech.",
+      "summary": "The sitting focused on post-murder payments, bail and legal expenses, and fears that the jailed brothers could begin speaking. Theuma’s account remains testimony for the jury to assess."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": [
+      {"from":"Melvin Theuma","to":"Yorgen Fenech","count":8,"tone":-1,"context":"Theuma explained recordings about payments, pressure and his allegation that Fenech helped the jailed men because of the murder; Fenech denies the charges.","days":"Day 35"},
+      {"from":"Melvin Theuma","to":"George Degiorgio","count":8,"tone":0,"context":"Theuma described continuing demands for money, including funds connected with bail and expenses after the assassination.","days":"Day 35"},
+      {"from":"Melvin Theuma","to":"Alfred Degiorgio","count":6,"tone":0,"context":"Theuma described the brothers’ continuing financial demands and his fear that they might speak about the murder.","days":"Day 35"},
+      {"from":"Melvin Theuma","to":"Mario Degiorgio","count":3,"tone":0,"context":"Theuma said Mario conveyed pressure and information concerning his brothers and named other people in conversations.","days":"Day 35"}
+    ]
+  },
+  {
+    "day": {
+      "day": 36,
+      "date": "11 Aug",
+      "type": "testimony",
+      "title": "Chats reveal reassurance, surveillance fears and an alleged plan to reshape evidence",
+      "summary": "Jurors saw messages in which Yorgen Fenech allegedly reassured Melvin Theuma they would not be caught. Theuma also described fears of surveillance, an alleged attempt to give an innocent meaning to incriminating language and a proposal to get a foreign-SIM phone to Alfred Degiorgio in prison.",
+      "points": [
+        "Messages attributed to Fenech repeatedly reassured Theuma that nobody could touch them",
+        "Theuma described an alleged plan to recast the meaning of evidence already held by investigators",
+        "The court heard about a proposed foreign-SIM phone for Alfred Degiorgio and continued references to Schembri"
+      ],
+      "sourceTitle": "Yorgen Fenech trial: Accused believed that as long as Labour were in power, no one would touch him",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143710/yorgen_fenech_trial_enters_sixth_week_as_melvin_theuma_returns_for_fourth_day_of_testimony"
+    },
+    "lead": {
+      "label": "Yesterday · 11 Aug 2026",
+      "title": "Theuma described reassurances that they would not be caught and efforts to avoid or undermine evidence.",
+      "summary": "Chats and recordings covered political confidence, police surveillance, money and a proposed phone for Alfred Degiorgio. Theuma continued to allege that Fenech alone commissioned the murder; Fenech has pleaded not guilty."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": [
+      {"from":"Melvin Theuma","to":"Yorgen Fenech","count":10,"tone":-1,"context":"Theuma explained messages in which Fenech allegedly reassured him, discussed surveillance and participated in a plan to alter the apparent meaning of evidence; Fenech denies the charges.","days":"Day 36"},
+      {"from":"Melvin Theuma","to":"Alfred Degiorgio","count":5,"tone":0,"context":"Theuma described efforts to arrange a prison phone with a foreign SIM and continued payments to the jailed brothers.","days":"Day 36"},
+      {"from":"Melvin Theuma","to":"Keith Schembri","count":5,"tone":0,"context":"Theuma referred to Schembri in relation to evidence, information and Fenech’s communications while maintaining Schembri did not commission him.","days":"Day 36"},
+      {"from":"Melvin Theuma","to":"Silvio Valletta","count":3,"tone":0,"context":"Theuma alleged Fenech invited Valletta to his ranch to learn what police knew about the investigation.","days":"Day 36"},
+      {"from":"Melvin Theuma","to":"Johann Cremona","count":3,"tone":0,"context":"Recordings captured Cremona warning Theuma about phones, surveillance and distancing himself from Fenech.","days":"Day 36"}
     ]
   }
 ];
