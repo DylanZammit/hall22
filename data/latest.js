@@ -1,5 +1,5 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Defence to begin cross-examination of Melvin Theuma",
+  "title": "LIVE | Yorgen Fenech trial: Melvin Theuma grilled on past crimes and relationships with criminals",
   "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQ3NRZHFHeGFOOHg5MGZJb2hiTjVYREIxaVpTZUFVem1JNDJMbmwzVXdBeEpqLW9aaDM2WGJEODJjMXZ0di1naXFBbXZKZnhNZGxrYmRkTjRYNUF0NnZMSFpUU2Z0YWM5b1ZNYUdBeXdvNUN5MnFSaHBzb05UVkt2ZHppWG5iZmNoYzg5N1JCTEpJS1kzMEd4MktaUzB1cnI0QzBCd04xTGtZSVNMNEl3NUdiU25sMmctU2lVSXh2bDkza3RrSDVVbGFVdFhnQWhIZGc?oc=5",
   "date": "12 August 2026"
 };
