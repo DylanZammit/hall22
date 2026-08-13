@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Melvin Theuma insists he lied when he named Keith Schembri as co-mastermind",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143730/live__yorgen_fenech_trial_defence_to_begin_crossexamination_of_melvin_theuma_",
-  "date": "12 August 2026"
+  "title": "LIVE | Yorgen Fenech jury trial: Defence to continue grilling Melvin Theuma as cross-examination continues",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdW51eGZNY2hicGNIaV9tMDQwNVAyYWlRWmxpYnhtQmJyeVM3TVNRNTBQeGtHNnc1ektVSWVfREhteHljOG9qU3JSaGkzb3VHRzQxUmZ5Y3FvekJ4ektxeElzNzEyME9XYTRDX01vS0dGLVA3ZlJsZzhyVUVONXNINS11MUp0cHpmVXNBbHJwYzBtekcyVEczbDBqUmRZRG5tb2dRa3lTWVlrSnktcXpvLXhFakZyX2F1SFJGRFg3dUJvUTlsY0stLTRra3BtSDdEblRWQ1hVejhaaE02bGZsb0kyRVRfN0puclJaOVVB?oc=5",
+  "date": "13 August 2026"
 };
 window.DAILY_UPDATES = [
   {
@@ -695,10 +695,38 @@ window.DAILY_UPDATES = [
     },
     "peopleUpdates": [],
     "relationUpdates": [
-      {"from":"Melvin Theuma","to":"Yorgen Fenech","count":8,"tone":-1,"context":"Theuma explained recordings about payments, pressure and his allegation that Fenech helped the jailed men because of the murder; Fenech denies the charges.","days":"Day 35"},
-      {"from":"Melvin Theuma","to":"George Degiorgio","count":8,"tone":0,"context":"Theuma described continuing demands for money, including funds connected with bail and expenses after the assassination.","days":"Day 35"},
-      {"from":"Melvin Theuma","to":"Alfred Degiorgio","count":6,"tone":0,"context":"Theuma described the brothers’ continuing financial demands and his fear that they might speak about the murder.","days":"Day 35"},
-      {"from":"Melvin Theuma","to":"Mario Degiorgio","count":3,"tone":0,"context":"Theuma said Mario conveyed pressure and information concerning his brothers and named other people in conversations.","days":"Day 35"}
+      {
+        "from": "Melvin Theuma",
+        "to": "Yorgen Fenech",
+        "count": 8,
+        "tone": -1,
+        "context": "Theuma explained recordings about payments, pressure and his allegation that Fenech helped the jailed men because of the murder; Fenech denies the charges.",
+        "days": "Day 35"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "George Degiorgio",
+        "count": 8,
+        "tone": 0,
+        "context": "Theuma described continuing demands for money, including funds connected with bail and expenses after the assassination.",
+        "days": "Day 35"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Alfred Degiorgio",
+        "count": 6,
+        "tone": 0,
+        "context": "Theuma described the brothers’ continuing financial demands and his fear that they might speak about the murder.",
+        "days": "Day 35"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Mario Degiorgio",
+        "count": 3,
+        "tone": 0,
+        "context": "Theuma said Mario conveyed pressure and information concerning his brothers and named other people in conversations.",
+        "days": "Day 35"
+      }
     ]
   },
   {
@@ -723,11 +751,46 @@ window.DAILY_UPDATES = [
     },
     "peopleUpdates": [],
     "relationUpdates": [
-      {"from":"Melvin Theuma","to":"Yorgen Fenech","count":10,"tone":-1,"context":"Theuma explained messages in which Fenech allegedly reassured him, discussed surveillance and participated in a plan to alter the apparent meaning of evidence; Fenech denies the charges.","days":"Day 36"},
-      {"from":"Melvin Theuma","to":"Alfred Degiorgio","count":5,"tone":0,"context":"Theuma described efforts to arrange a prison phone with a foreign SIM and continued payments to the jailed brothers.","days":"Day 36"},
-      {"from":"Melvin Theuma","to":"Keith Schembri","count":5,"tone":0,"context":"Theuma referred to Schembri in relation to evidence, information and Fenech’s communications while maintaining Schembri did not commission him.","days":"Day 36"},
-      {"from":"Melvin Theuma","to":"Silvio Valletta","count":3,"tone":0,"context":"Theuma alleged Fenech invited Valletta to his ranch to learn what police knew about the investigation.","days":"Day 36"},
-      {"from":"Melvin Theuma","to":"Johann Cremona","count":3,"tone":0,"context":"Recordings captured Cremona warning Theuma about phones, surveillance and distancing himself from Fenech.","days":"Day 36"}
+      {
+        "from": "Melvin Theuma",
+        "to": "Yorgen Fenech",
+        "count": 10,
+        "tone": -1,
+        "context": "Theuma explained messages in which Fenech allegedly reassured him, discussed surveillance and participated in a plan to alter the apparent meaning of evidence; Fenech denies the charges.",
+        "days": "Day 36"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Alfred Degiorgio",
+        "count": 5,
+        "tone": 0,
+        "context": "Theuma described efforts to arrange a prison phone with a foreign SIM and continued payments to the jailed brothers.",
+        "days": "Day 36"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Keith Schembri",
+        "count": 5,
+        "tone": 0,
+        "context": "Theuma referred to Schembri in relation to evidence, information and Fenech’s communications while maintaining Schembri did not commission him.",
+        "days": "Day 36"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Silvio Valletta",
+        "count": 3,
+        "tone": 0,
+        "context": "Theuma alleged Fenech invited Valletta to his ranch to learn what police knew about the investigation.",
+        "days": "Day 36"
+      },
+      {
+        "from": "Melvin Theuma",
+        "to": "Johann Cremona",
+        "count": 3,
+        "tone": 0,
+        "context": "Recordings captured Cremona warning Theuma about phones, surveillance and distancing himself from Fenech.",
+        "days": "Day 36"
+      }
     ]
   }
 ];
