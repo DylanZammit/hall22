@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech jury trial: Defence to continue grilling Melvin Theuma as cross-examination continues",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdW51eGZNY2hicGNIaV9tMDQwNVAyYWlRWmxpYnhtQmJyeVM3TVNRNTBQeGtHNnc1ektVSWVfREhteHljOG9qU3JSaGkzb3VHRzQxUmZ5Y3FvekJ4ektxeElzNzEyME9XYTRDX01vS0dGLVA3ZlJsZzhyVUVONXNINS11MUp0cHpmVXNBbHJwYzBtekcyVEczbDBqUmRZRG5tb2dRa3lTWVlrSnktcXpvLXhFakZyX2F1SFJGRFg3dUJvUTlsY0stLTRra3BtSDdEblRWQ1hVejhaaE02bGZsb0kyRVRfN0puclJaOVVB?oc=5",
-  "date": "13 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -790,6 +786,131 @@ window.DAILY_UPDATES = [
         "tone": 0,
         "context": "Recordings captured Cremona warning Theuma about phones, surveillance and distancing himself from Fenech.",
         "days": "Day 36"
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 37,
+      "date": "12 Aug",
+      "type": "testimony",
+      "title": "Defence tests Theuma’s credibility in heated cross-examination",
+      "summary": "Defence lawyer Gianella de Marco pressed Melvin Theuma over contradictions, recordings, his presidential pardon and claims involving Keith Schembri, Johann Cremona and former police commissioner Lawrence Cutajar. Theuma admitted that some past statements were lies or bluffs, but maintained his allegation that Yorgen Fenech commissioned the murder; Fenech denies the charge.",
+      "points": [
+        "Theuma admitted inventing claims that implicated Keith Schembri in the murder, while maintaining his allegation against Fenech",
+        "The defence challenged inconsistencies involving Johann Cremona, Lawrence Cutajar and the presidential pardon",
+        "Theuma said learning that Vince Muscat might receive a pardon prompted him to begin making recordings"
+      ],
+      "sourceTitle": "Yorgen Fenech jury trial: Defence lawyer de Marco presses star witness Theuma in heated sitting",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143730/live__yorgen_fenech_trial_defence_to_begin_crossexamination_of_melvin_theuma_"
+    },
+    "lead": {
+      "label": "Yesterday · 12 Aug 2026",
+      "title": "Theuma admitted past lies and bluffs as the defence challenged his credibility.",
+      "summary": "Under heated cross-examination, Theuma withdrew claims implicating Keith Schembri but continued to allege that Fenech commissioned the murder. Fenech has pleaded not guilty, and the testimony remains for the jury to assess."
+    },
+    "peopleUpdates": [
+      {
+        "name": "Mario Tonna",
+        "role": "former assistant police commissioner",
+        "bio": "Former assistant police commissioner whom Theuma said he approached after the Degiorgio brothers’ arrests to ask whether police had found a phone used to communicate with Alfred Degiorgio."
+      }
+    ],
+    "relationUpdates": [
+      {
+        "from": "Melvin Theuma", "to": "Yorgen Fenech", "count": 10, "tone": -1,
+        "context": "Despite challenges to his credibility, Theuma maintained his allegation that Fenech commissioned the murder; Fenech denies the charge.", "days": "Day 37"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Keith Schembri", "count": 8, "tone": 0,
+        "context": "Theuma admitted inventing earlier claims that Schembri was involved in the murder, while saying Schembri arranged his government job and passed information to Fenech.", "days": "Day 37"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Johann Cremona", "count": 6, "tone": -1,
+        "context": "Theuma disputed parts of Cremona’s testimony but also said information Cremona gave him later proved accurate.", "days": "Day 37"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Lawrence Cutajar", "count": 5, "tone": 0,
+        "context": "Theuma said recorded claims about receiving information from the former police commissioner were bluffs and denied calling him.", "days": "Day 37"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Kenneth Camilleri", "count": 4, "tone": -1,
+        "context": "Theuma challenged Camilleri’s differing account and asked that he be brought back to court.", "days": "Day 37"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Vince Muscat", "count": 3, "tone": 0,
+        "context": "Theuma said the prospect of Muscat receiving a pardon led him to consider seeking one and to begin recording conversations.", "days": "Day 37"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Mario Tonna", "count": 3, "tone": 0,
+        "context": "Theuma said he asked Tonna whether police had found a phone used to communicate with Alfred Degiorgio and later helped Tonna financially.", "days": "Day 37"
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 38,
+      "date": "13 Aug",
+      "type": "testimony",
+      "title": "Yorgen Fenech trial: Direct confrontation between George Degiorgio and Melvin Theuma",
+      "summary": "The defence continued challenging Melvin Theuma’s credibility before the court held direct confrontations between Theuma and other witnesses. A confrontation with George Degiorgio escalated into a shouting match over who commissioned the murder and whether support sent to prison was requested or voluntary; the competing accounts remain evidence for the jury to assess.",
+      "points": [
+        "George Degiorgio and Theuma gave sharply conflicting accounts during a heated face-to-face confrontation",
+        "The court also confronted Theuma with Kenneth Camilleri over disputed meetings and messages",
+        "Chats and recordings focused on a photograph with Keith Schembri, missing material and advice from Edgar Brincat"
+      ],
+      "sourceTitle": "Yorgen Fenech trial: Direct confrontation between George Degiorgio and Melvin Theuma",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143745/yorgen_fenech_jury_trial_defence_to_continue_grilling_melvin_theuma_as_crossexamination_continues_"
+    },
+    "lead": {
+      "label": "Latest sitting · 13 Aug 2026",
+      "title": "A direct confrontation between Degiorgio and Theuma erupted into a shouting match.",
+      "summary": "The two men disputed who was named as commissioning the murder and whether money and gifts sent to prison were demanded or volunteered. Their accounts, and the wider cross-examination, remain evidence for the jury to assess."
+    },
+    "peopleUpdates": [
+      {
+        "name": "Shianne Zammit",
+        "role": "Theuma family member",
+        "bio": "Theuma’s stepdaughter, whose messages about locating recordings and a photograph of Theuma with Keith Schembri were shown during cross-examination."
+      },
+      {
+        "name": "Charmaine Zammit",
+        "role": "Theuma’s partner",
+        "bio": "Melvin Theuma’s partner, whose messages with her daughter about missing recordings, photographs and conversations with other figures were shown in court."
+      }
+    ],
+    "relationUpdates": [
+      {
+        "from": "George Degiorgio", "to": "Melvin Theuma", "count": 10, "tone": -1,
+        "context": "During a direct confrontation, Degiorgio accused Theuma of lying and disputed that money and gifts sent to prison had been demanded; Theuma rejected his account.", "days": "Day 38"
+      },
+      {
+        "from": "George Degiorgio", "to": "Keith Schembri", "count": 6, "tone": 0,
+        "context": "Degiorgio alleged that Theuma had named Schembri when discussing who was behind the murder request; Theuma denied this and said Schembri was not involved.", "days": "Day 38"
+      },
+      {
+        "from": "George Degiorgio", "to": "Chris Cardona", "count": 2, "tone": 0,
+        "context": "Degiorgio alleged that he and others went to Cardona’s office to verify who was behind the request and attributed a response to Cardona.", "days": "Day 38"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Kenneth Camilleri", "count": 7, "tone": -1,
+        "context": "In a direct confrontation, Theuma and Camilleri disputed alleged meetings, messages and whether Theuma had reason to fear him.", "days": "Day 38"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Edgar Brincat", "count": 6, "tone": 0,
+        "context": "Theuma explained recordings and chats in which Brincat advised naming people clearly and was said to be seeking a photograph involving Schembri.", "days": "Day 38"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Keith Schembri", "count": 7, "tone": 0,
+        "context": "Cross-examination examined why Theuma urgently sought a photograph with Schembri and recordings that could identify people by name.", "days": "Day 38"
+      },
+      {
+        "from": "Melvin Theuma", "to": "Shianne Zammit", "count": 4, "tone": 0,
+        "context": "Messages showed Theuma asking Zammit to locate missing recordings, photographs and devices.", "days": "Day 38"
+      },
+      {
+        "from": "Charmaine Zammit", "to": "Shianne Zammit", "count": 4, "tone": 0,
+        "context": "Their messages concerned efforts to locate a photograph of Theuma with Schembri and other missing material.", "days": "Day 38"
       }
     ]
   }

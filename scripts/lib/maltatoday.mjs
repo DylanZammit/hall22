@@ -75,7 +75,7 @@ export function cleanArticle(html) {
 }
 
 export function isCompletedSitting(text) {
-  return /(sitting|session|proceedings|court|trial)\s+(?:is\s+)?(?:concludes?|wraps? up|ends?|adjourned)|the day concluded|that concludes|thanks for following/i.test(text);
+  return /(sitting|session|proceedings|court|trial)\s+(?:is\s+)?(?:concludes?|wraps? up|ends?|over|adjourned)|the day concluded|that concludes|thanks for following/i.test(text);
 }
 
 export function parseStoredUpdates(source) {

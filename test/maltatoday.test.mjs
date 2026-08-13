@@ -29,6 +29,7 @@ test("recognises a completed sitting after cleaning HTML", () => {
 test("recognises MaltaToday wording that a trial was adjourned", () => {
   assert.equal(isCompletedSitting("The trial is adjourned until Tuesday at 9am."), true);
   assert.equal(isCompletedSitting("The day concluded with testimony from a police constable."), true);
+  assert.equal(isCompletedSitting("18:48 Sitting over That brings a dramatic end to today’s sitting."), true);
 });
 
 test("parses the persistent update history", () => {
