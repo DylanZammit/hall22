@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech trial | Reporting of jury paused on court order",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOUFZRm1KNHo2d1lNM2h6RkdBRnU5NE1ZUEhvVU1lZktYVHc0NW03NWlYNWtIMzlTcUM2d0FodWNVQkVJZWU4dzBZODh0S2tYcjNHelNVUVpTVkxlQm5ad08xN1NnbDMtNktnbGNSZll2UmtlSGdPSDB5Ul8wVUNnSk9McUdyR1dyeHdwVjFFTlgzXzdRejJmc0JoaDVUeTlVS01kU2xmN3JDd0Y4T1FISG51NlBNSEluSHYw?oc=5",
+  "date": "14 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -818,32 +822,60 @@ window.DAILY_UPDATES = [
     ],
     "relationUpdates": [
       {
-        "from": "Melvin Theuma", "to": "Yorgen Fenech", "count": 10, "tone": -1,
-        "context": "Despite challenges to his credibility, Theuma maintained his allegation that Fenech commissioned the murder; Fenech denies the charge.", "days": "Day 37"
+        "from": "Melvin Theuma",
+        "to": "Yorgen Fenech",
+        "count": 10,
+        "tone": -1,
+        "context": "Despite challenges to his credibility, Theuma maintained his allegation that Fenech commissioned the murder; Fenech denies the charge.",
+        "days": "Day 37"
       },
       {
-        "from": "Melvin Theuma", "to": "Keith Schembri", "count": 8, "tone": 0,
-        "context": "Theuma admitted inventing earlier claims that Schembri was involved in the murder, while saying Schembri arranged his government job and passed information to Fenech.", "days": "Day 37"
+        "from": "Melvin Theuma",
+        "to": "Keith Schembri",
+        "count": 8,
+        "tone": 0,
+        "context": "Theuma admitted inventing earlier claims that Schembri was involved in the murder, while saying Schembri arranged his government job and passed information to Fenech.",
+        "days": "Day 37"
       },
       {
-        "from": "Melvin Theuma", "to": "Johann Cremona", "count": 6, "tone": -1,
-        "context": "Theuma disputed parts of Cremona’s testimony but also said information Cremona gave him later proved accurate.", "days": "Day 37"
+        "from": "Melvin Theuma",
+        "to": "Johann Cremona",
+        "count": 6,
+        "tone": -1,
+        "context": "Theuma disputed parts of Cremona’s testimony but also said information Cremona gave him later proved accurate.",
+        "days": "Day 37"
       },
       {
-        "from": "Melvin Theuma", "to": "Lawrence Cutajar", "count": 5, "tone": 0,
-        "context": "Theuma said recorded claims about receiving information from the former police commissioner were bluffs and denied calling him.", "days": "Day 37"
+        "from": "Melvin Theuma",
+        "to": "Lawrence Cutajar",
+        "count": 5,
+        "tone": 0,
+        "context": "Theuma said recorded claims about receiving information from the former police commissioner were bluffs and denied calling him.",
+        "days": "Day 37"
       },
       {
-        "from": "Melvin Theuma", "to": "Kenneth Camilleri", "count": 4, "tone": -1,
-        "context": "Theuma challenged Camilleri’s differing account and asked that he be brought back to court.", "days": "Day 37"
+        "from": "Melvin Theuma",
+        "to": "Kenneth Camilleri",
+        "count": 4,
+        "tone": -1,
+        "context": "Theuma challenged Camilleri’s differing account and asked that he be brought back to court.",
+        "days": "Day 37"
       },
       {
-        "from": "Melvin Theuma", "to": "Vince Muscat", "count": 3, "tone": 0,
-        "context": "Theuma said the prospect of Muscat receiving a pardon led him to consider seeking one and to begin recording conversations.", "days": "Day 37"
+        "from": "Melvin Theuma",
+        "to": "Vince Muscat",
+        "count": 3,
+        "tone": 0,
+        "context": "Theuma said the prospect of Muscat receiving a pardon led him to consider seeking one and to begin recording conversations.",
+        "days": "Day 37"
       },
       {
-        "from": "Melvin Theuma", "to": "Mario Tonna", "count": 3, "tone": 0,
-        "context": "Theuma said he asked Tonna whether police had found a phone used to communicate with Alfred Degiorgio and later helped Tonna financially.", "days": "Day 37"
+        "from": "Melvin Theuma",
+        "to": "Mario Tonna",
+        "count": 3,
+        "tone": 0,
+        "context": "Theuma said he asked Tonna whether police had found a phone used to communicate with Alfred Degiorgio and later helped Tonna financially.",
+        "days": "Day 37"
       }
     ]
   },
@@ -881,36 +913,68 @@ window.DAILY_UPDATES = [
     ],
     "relationUpdates": [
       {
-        "from": "George Degiorgio", "to": "Melvin Theuma", "count": 10, "tone": -1,
-        "context": "During a direct confrontation, Degiorgio accused Theuma of lying and disputed that money and gifts sent to prison had been demanded; Theuma rejected his account.", "days": "Day 38"
+        "from": "George Degiorgio",
+        "to": "Melvin Theuma",
+        "count": 10,
+        "tone": -1,
+        "context": "During a direct confrontation, Degiorgio accused Theuma of lying and disputed that money and gifts sent to prison had been demanded; Theuma rejected his account.",
+        "days": "Day 38"
       },
       {
-        "from": "George Degiorgio", "to": "Keith Schembri", "count": 6, "tone": 0,
-        "context": "Degiorgio alleged that Theuma had named Schembri when discussing who was behind the murder request; Theuma denied this and said Schembri was not involved.", "days": "Day 38"
+        "from": "George Degiorgio",
+        "to": "Keith Schembri",
+        "count": 6,
+        "tone": 0,
+        "context": "Degiorgio alleged that Theuma had named Schembri when discussing who was behind the murder request; Theuma denied this and said Schembri was not involved.",
+        "days": "Day 38"
       },
       {
-        "from": "George Degiorgio", "to": "Chris Cardona", "count": 2, "tone": 0,
-        "context": "Degiorgio alleged that he and others went to Cardona’s office to verify who was behind the request and attributed a response to Cardona.", "days": "Day 38"
+        "from": "George Degiorgio",
+        "to": "Chris Cardona",
+        "count": 2,
+        "tone": 0,
+        "context": "Degiorgio alleged that he and others went to Cardona’s office to verify who was behind the request and attributed a response to Cardona.",
+        "days": "Day 38"
       },
       {
-        "from": "Melvin Theuma", "to": "Kenneth Camilleri", "count": 7, "tone": -1,
-        "context": "In a direct confrontation, Theuma and Camilleri disputed alleged meetings, messages and whether Theuma had reason to fear him.", "days": "Day 38"
+        "from": "Melvin Theuma",
+        "to": "Kenneth Camilleri",
+        "count": 7,
+        "tone": -1,
+        "context": "In a direct confrontation, Theuma and Camilleri disputed alleged meetings, messages and whether Theuma had reason to fear him.",
+        "days": "Day 38"
       },
       {
-        "from": "Melvin Theuma", "to": "Edgar Brincat", "count": 6, "tone": 0,
-        "context": "Theuma explained recordings and chats in which Brincat advised naming people clearly and was said to be seeking a photograph involving Schembri.", "days": "Day 38"
+        "from": "Melvin Theuma",
+        "to": "Edgar Brincat",
+        "count": 6,
+        "tone": 0,
+        "context": "Theuma explained recordings and chats in which Brincat advised naming people clearly and was said to be seeking a photograph involving Schembri.",
+        "days": "Day 38"
       },
       {
-        "from": "Melvin Theuma", "to": "Keith Schembri", "count": 7, "tone": 0,
-        "context": "Cross-examination examined why Theuma urgently sought a photograph with Schembri and recordings that could identify people by name.", "days": "Day 38"
+        "from": "Melvin Theuma",
+        "to": "Keith Schembri",
+        "count": 7,
+        "tone": 0,
+        "context": "Cross-examination examined why Theuma urgently sought a photograph with Schembri and recordings that could identify people by name.",
+        "days": "Day 38"
       },
       {
-        "from": "Melvin Theuma", "to": "Shianne Zammit", "count": 4, "tone": 0,
-        "context": "Messages showed Theuma asking Zammit to locate missing recordings, photographs and devices.", "days": "Day 38"
+        "from": "Melvin Theuma",
+        "to": "Shianne Zammit",
+        "count": 4,
+        "tone": 0,
+        "context": "Messages showed Theuma asking Zammit to locate missing recordings, photographs and devices.",
+        "days": "Day 38"
       },
       {
-        "from": "Charmaine Zammit", "to": "Shianne Zammit", "count": 4, "tone": 0,
-        "context": "Their messages concerned efforts to locate a photograph of Theuma with Schembri and other missing material.", "days": "Day 38"
+        "from": "Charmaine Zammit",
+        "to": "Shianne Zammit",
+        "count": 4,
+        "tone": 0,
+        "context": "Their messages concerned efforts to locate a photograph of Theuma with Schembri and other missing material.",
+        "days": "Day 38"
       }
     ]
   }
