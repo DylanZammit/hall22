@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial | Reporting of jury paused on court order",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOUFZRm1KNHo2d1lNM2h6RkdBRnU5NE1ZUEhvVU1lZktYVHc0NW03NWlYNWtIMzlTcUM2d0FodWNVQkVJZWU4dzBZODh0S2tYcjNHelNVUVpTVkxlQm5ad08xN1NnbDMtNktnbGNSZll2UmtlSGdPSDB5Ul8wVUNnSk9McUdyR1dyeHdwVjFFTlgzXzdRejJmc0JoaDVUeTlVS01kU2xmN3JDd0Y4T1FISG51NlBNSEluSHYw?oc=5",
-  "date": "14 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -977,5 +973,28 @@ window.DAILY_UPDATES = [
         "days": "Day 38"
       }
     ]
+  },
+  {
+    "day": {
+      "day": 39,
+      "date": "14 Aug",
+      "type": "case",
+      "title": "Court pauses media reporting while the trial continues",
+      "summary": "The jury trial continued, but the court prohibited media reporting of the proceedings on Friday and Saturday. MaltaToday paused its live coverage in compliance with the court order and said full coverage would resume when the decree is lifted.",
+      "points": [
+        "The trial continued behind a temporary media-reporting restriction",
+        "The court order applies to Friday and Saturday",
+        "MaltaToday said its full coverage will resume when the decree is lifted"
+      ],
+      "sourceTitle": "Yorgen Fenech trial | Reporting of jury paused on court order",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143766/yorgen_fenech_trial__reporting_of_jury_paused_on_court_order"
+    },
+    "lead": {
+      "label": "Latest update · 14 Aug 2026",
+      "title": "Court prohibits reporting of the trial on Friday and Saturday.",
+      "summary": "The jury trial is continuing, but MaltaToday has paused its coverage in line with the court decree. No evidence or testimony from the restricted proceedings is summarised here."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": []
   }
 ];
