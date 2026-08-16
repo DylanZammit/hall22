@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial | Reporting of jury paused on court order",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOWTNGbkhrRmpQcmd6eENqblNqeTRRdGRfN0hmbEloNjdsWmE1VGFEeVM5ZDFxTTlFeld3bEhsMEVqUC1VaXo3M2lwOTZrMjh5bk1SczNHYUhaakZOaWZhRDFsRjRUWEljSUFMbEhoZ1dnV21EQlJzOWQtem5yZmJON21xd3UyNlZiYWdaNjBtXzNPdkp5enJmNURDa0J2S0stcUhjby0zUDdjU1Y2V29waXg3dEhERmQxbDdDNw?oc=5",
-  "date": "15 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
