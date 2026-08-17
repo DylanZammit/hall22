@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech trial: Proceedings resume after Melvin Theuma’s marathon testimony reaches end",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143808/yorgen_fenech_trial_proceedings_resume_after_melvin_theumas_marathon_testimony_reaches_end",
+  "date": "17 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
