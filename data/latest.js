@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech trial: Jurors to continue following recordings of accused’s police interrogation",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPY05ha0o0RjJDTldPTTN0OXdzN292SlVRYkFGX2duZW5TUlhfSUdCRXBIZGpMNVlmUkhmOFVfd3p2dWZzczRtblRNWVZTNTVsRzFLWEg2MUNwekxrZG12bW4wc3pwTENZZzNCMTk2ZWVFX0RDNEwzODJ6NUdNd2NZZGhrWEtoNUFhYjhsSVkzX2hiOUVCbHNkeEdjQlVPYktyUjFBQ25jTnc1LWhTdzRiVTNzbURkU1hXT3FBbEhFZHBiWVhwRnhhaVZOM0J1dnZwVmgzcFlFWVduZTYtOVFzTWliQk9JOTFzamZiSmxlQQ?oc=5",
+  "date": "18 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
