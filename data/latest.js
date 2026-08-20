@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech trial: Defence to continue cross-examining police inspector",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143857/yorgen_fenech_trial_defence_to_continue_crossexamining_police_inspector_",
+  "date": "20 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
