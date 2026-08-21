@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Defence begins presenting its case",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYlZMV1dsTFpvZEtBR05CdkF5NVI4aUtjQzJSemwzeVYtMFlXbF9QdVpuNFhSRHhPN0pyWjFVQ3Z0R1ZCNUxrNVp3NHpqcFVTRm1UeWk5NTBSNDhYdXZFakFhSkQ2SjA1TTBuc3ZCYmdYXy1wNWZoRDYybl9oanJMV1c1ak1qaFlYZGJlcHI0OHBGdkdSRF9NYWZsaUxPalBSZXlVUDU3Vnc4ZFk1dk1yN19rbw?oc=5",
+  "title": "LIVE | Yorgen Fenech trial: Defence requests dissolution of jury over tablet news headlines",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR1RiWTlqY1lTSWJUajY3c3NvMS0ydzFQbTFmWnB4VzVaRXVmU2lfcW12M1pBZTM0bi1UdVg0cDhJZXVGQnR0RndKZVh2TmpFeVpJaVZZS295R0NGQ2p3T25CSjVYZlFiV3JWR2xRYTNqaGNxVVFsZ0l1Mk9zVHMtZk13cXpEUjFyTGtnWEt4dmRyakNpcnJhNXpabzdYZ05ETGx5WHQyei1tVDJfZlZQbHRqeEI?oc=5",
   "date": "21 August 2026"
 };
 window.DAILY_UPDATES = [
