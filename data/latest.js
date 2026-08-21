@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Defence requests dissolution of jury over tablet news headlines",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOR1RiWTlqY1lTSWJUajY3c3NvMS0ydzFQbTFmWnB4VzVaRXVmU2lfcW12M1pBZTM0bi1UdVg0cDhJZXVGQnR0RndKZVh2TmpFeVpJaVZZS295R0NGQ2p3T25CSjVYZlFiV3JWR2xRYTNqaGNxVVFsZ0l1Mk9zVHMtZk13cXpEUjFyTGtnWEt4dmRyakNpcnJhNXpabzdYZ05ETGx5WHQyei1tVDJfZlZQbHRqeEI?oc=5",
-  "date": "21 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -1000,5 +996,144 @@ window.DAILY_UPDATES = [
     },
     "peopleUpdates": [],
     "relationUpdates": []
+  },
+  {
+    "day": {
+      "day": 44,
+      "date": "20 Aug",
+      "type": "testimony",
+      "title": "Prosecution rests its case after Andrew Caruana Galizia testifies",
+      "summary": "The prosecution formally closed its case after Andrew Caruana Galizia gave emotional testimony about his mother’s final months, her assassination and its aftermath. Earlier, the defence continued cross-examining Inspector Kurt Zahra over allegations involving Keith Schembri, Chris Cardona and David Gatt; the disputed accounts remain evidence for the jury to assess.",
+      "points": [
+        "Andrew Caruana Galizia described the last time he saw his mother and his family’s pursuit of accountability",
+        "The defence questioned Inspector Kurt Zahra about statements involving Schembri, Cardona and Gatt",
+        "Prosecutors rested their case and the defence said it expected to call four or five witnesses"
+      ],
+      "sourceTitle": "Yorgen Fenech trial: Prosecution rests its case as Andrew Caruana Galizia gives emotional final testimony",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143857/yorgen_fenech_trial_defence_to_continue_crossexamining_police_inspector_"
+    },
+    "lead": {
+      "label": "20 Aug 2026",
+      "title": "The prosecution rests its case after its final witness testifies.",
+      "summary": "Andrew Caruana Galizia testified about his mother’s last months and his family’s experience after her assassination. Fenech has pleaded not guilty, and the evidence remains for the jury to assess."
+    },
+    "peopleUpdates": [
+      {
+        "name": "Andrew Caruana Galizia",
+        "role": "victim’s son / witness",
+        "bio": "One of Daphne Caruana Galizia’s sons and the prosecution’s final witness, who testified about his mother’s work, the day of her assassination and his family’s subsequent pursuit of accountability."
+      },
+      {
+        "name": "Kurt Zahra",
+        "role": "police inspector / witness",
+        "bio": "Police inspector involved in the murder investigation whose cross-examination addressed investigative decisions and statements concerning several people mentioned in the case."
+      }
+    ],
+    "relationUpdates": [
+      {
+        "from": "Andrew Caruana Galizia",
+        "to": "Daphne Caruana Galizia",
+        "count": 10,
+        "tone": 1,
+        "context": "Caruana Galizia described his mother’s work, their final meeting and the effect of her assassination on the family.",
+        "days": "Day 44"
+      },
+      {
+        "from": "Kurt Zahra",
+        "to": "Keith Schembri",
+        "count": 5,
+        "tone": 0,
+        "context": "Under cross-examination, Zahra discussed statements and investigative information that referred to Schembri; the allegations were disputed.",
+        "days": "Day 44"
+      },
+      {
+        "from": "Kurt Zahra",
+        "to": "Chris Cardona",
+        "count": 3,
+        "tone": 0,
+        "context": "The defence questioned Zahra about Vince Muscat’s statements and coded references alleged to concern Cardona.",
+        "days": "Day 44"
+      },
+      {
+        "from": "Kurt Zahra",
+        "to": "David Gatt",
+        "count": 3,
+        "tone": 0,
+        "context": "The defence questioned Zahra about statements attributed to Vince Muscat that mentioned Gatt in connection with an earlier alleged murder plan.",
+        "days": "Day 44"
+      }
+    ]
+  },
+  {
+    "day": {
+      "day": 45,
+      "date": "21 Aug",
+      "type": "testimony",
+      "title": "Fenech denies ordering the assassination as the defence opens its case",
+      "summary": "Yorgen Fenech testified that he never ordered Daphne Caruana Galizia’s assassination and denied Melvin Theuma’s account of the alleged commission. He acknowledged passing Theuma information from Keith Schembri about impending arrests and described that as the biggest mistake of his life. Fenech has pleaded not guilty; his account remains evidence for the jury to assess.",
+      "points": [
+        "Fenech denied ordering the assassination and challenged Theuma’s account using travel dates",
+        "He admitted relaying information from Schembri about the planned arrests to Theuma",
+        "He discussed his relationships with Theuma, Schembri and Johann Cremona, as well as Electrogas and 17 Black"
+      ],
+      "sourceTitle": "LIVE | Yorgen Fenech: ‘I never, never, never ordered Caruana Galizia assassination’",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143876/yorgen_fenech_trial_defence_begins_presenting_its_case2"
+    },
+    "lead": {
+      "label": "Latest sitting · 21 Aug 2026",
+      "title": "Fenech takes the stand and denies ordering Caruana Galizia’s assassination.",
+      "summary": "Opening the defence case, Fenech rejected Theuma’s central allegation but acknowledged passing him information received from Schembri about impending arrests. He has pleaded not guilty, and his testimony remains for the jury to assess."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": [
+      {
+        "from": "Yorgen Fenech",
+        "to": "Melvin Theuma",
+        "count": 10,
+        "tone": -1,
+        "context": "Fenech denied Theuma’s allegation that he commissioned the murder, challenged parts of his timeline and described their dealings and later breakdown in relations.",
+        "days": "Day 45"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Keith Schembri",
+        "count": 10,
+        "tone": 0,
+        "context": "Fenech described Schembri as a friend and said Schembri gave him information about impending arrests that he then passed to Theuma; he also attributed other information and introductions to Schembri.",
+        "days": "Day 45"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Johann Cremona",
+        "count": 4,
+        "tone": 0,
+        "context": "Fenech explained how he knew Cremona through gaming business and said Cremona told him that Theuma was recording him.",
+        "days": "Day 45"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Edgar Brincat",
+        "count": 2,
+        "tone": 0,
+        "context": "Fenech alleged that Theuma received information about police raids from Brincat, who in turn obtained it from the former police commissioner.",
+        "days": "Day 45"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Lawrence Cutajar",
+        "count": 2,
+        "tone": -1,
+        "context": "Fenech alleged that information about police raids reached Theuma through Brincat from the former police commissioner, using an insulting description for which he immediately apologised.",
+        "days": "Day 45"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Adrian Vella",
+        "count": 2,
+        "tone": 1,
+        "context": "Fenech described Vella as the Fenech family doctor and said he introduced him to Keith Schembri.",
+        "days": "Day 45"
+      }
+    ]
   }
 ];
