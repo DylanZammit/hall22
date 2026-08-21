@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
   "title": "LIVE | Yorgen Fenech trial: Defence begins presenting its case",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143876/yorgen_fenech_trial_defence_begins_presenting_its_case",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYlZMV1dsTFpvZEtBR05CdkF5NVI4aUtjQzJSemwzeVYtMFlXbF9QdVpuNFhSRHhPN0pyWjFVQ3Z0R1ZCNUxrNVp3NHpqcFVTRm1UeWk5NTBSNDhYdXZFakFhSkQ2SjA1TTBuc3ZCYmdYXy1wNWZoRDYybl9oanJMV1c1ak1qaFlYZGJlcHI0OHBGdkdSRF9NYWZsaUxPalBSZXlVUDU3Vnc4ZFk1dk1yN19rbw?oc=5",
   "date": "21 August 2026"
 };
 window.DAILY_UPDATES = [
