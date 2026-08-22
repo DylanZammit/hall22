@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Accused mastermind Yorgen Fenech to resume testimony as jury trial enters day 46",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNaGFGV3RqbW5qeE9tV2hHR2dPNEZWemlhYVFGLUVia25GSzdhaWtuand5MkdYcTNWT0p4VnhGRUllS3F2RHc3R3c3dGd4Tk5QbllwNENxbnAwelJZMUhYWnBPUEhVdGdXUEY5b1BLTjJibHVvUjlSMDhGSG9QMzY2WUhqdDJJakVvRU93emZfaUVWN2s1SkdWWHFyeU91VkZoSFppVDNySjc5T2FVUUJrYXI0cTZvQUpieGlSeG42TW8zWkJBcGduZ092UWtHV1ZwM2hUdlBtZw?oc=5",
+  "date": "22 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
