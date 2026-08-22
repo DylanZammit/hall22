@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Accused mastermind Yorgen Fenech to resume testimony as jury trial enters day 46",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNaGFGV3RqbW5qeE9tV2hHR2dPNEZWemlhYVFGLUVia25GSzdhaWtuand5MkdYcTNWT0p4VnhGRUllS3F2RHc3R3c3dGd4Tk5QbllwNENxbnAwelJZMUhYWnBPUEhVdGdXUEY5b1BLTjJibHVvUjlSMDhGSG9QMzY2WUhqdDJJakVvRU93emZfaUVWN2s1SkdWWHFyeU91VkZoSFppVDNySjc5T2FVUUJrYXI0cTZvQUpieGlSeG42TW8zWkJBcGduZ092UWtHV1ZwM2hUdlBtZw?oc=5",
+  "title": "LIVE | Yorgen Fenech says he felt threatened by Melvin Theuma",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143896/accused_mastermind_yorgen_fenech_to_resume_testimony_as_jury_trial_enters_day_46_2",
   "date": "22 August 2026"
 };
 window.DAILY_UPDATES = [
