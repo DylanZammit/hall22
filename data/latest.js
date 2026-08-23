@@ -1135,5 +1135,117 @@ window.DAILY_UPDATES = [
         "days": "Day 45"
       }
     ]
+  },
+  {
+    "day": {
+      "day": 46,
+      "date": "22 Aug",
+      "type": "testimony",
+      "title": "Fenech alleges Schembri was the mastermind under cross-examination",
+      "summary": "During prosecution cross-examination, Yorgen Fenech alleged that Keith Schembri was the mastermind behind Daphne Caruana Galizia’s murder. Fenech also said Melvin Theuma threatened him, acknowledged passing Theuma information about impending police raids and was questioned about messages with political and law-enforcement figures. Fenech has pleaded not guilty; his allegations and testimony remain evidence for the jury to assess.",
+      "points": [
+        "Fenech alleged that Keith Schembri was the mastermind; Schembri has denied involvement",
+        "Fenech said Theuma intimidated him and acknowledged giving him about €450,000 while denying financing the murder",
+        "Cross-examination examined police contacts, deleted-message discussions and communications involving public officials"
+      ],
+      "sourceTitle": "‘Keith Schembri was the mastermind’, Yorgen Fenech tells jury",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143896/accused_mastermind_yorgen_fenech_to_resume_testimony_as_jury_trial_enters_day_46_2"
+    },
+    "lead": {
+      "label": "Latest sitting · 22 Aug 2026",
+      "title": "Fenech tells the jury he believes Schembri was the mastermind.",
+      "summary": "Under prosecution cross-examination, Fenech alleged that Schembri directed the murder plot and that Theuma financially drained and intimidated him. Schembri has denied involvement, Fenech has pleaded not guilty, and the competing accounts remain for the jury to assess."
+    },
+    "peopleUpdates": [
+      {
+        "name": "Raymond Aquilina",
+        "role": "former police superintendent",
+        "bio": "Former police superintendent who led an anti-money-laundering unit. Prosecutors questioned Fenech about encrypted Signal calls with Aquilina; Fenech said he could not recall the conversations and denied discussing Theuma with him."
+      },
+      {
+        "name": "Marvin Gaerty",
+        "role": "former tax commissioner",
+        "bio": "Former Commissioner for Inland Revenue whose 2019 messages with Fenech were presented during cross-examination. Fenech described their relationship as good and said they knew each other through music."
+      },
+      {
+        "name": "Heathcliff Farrugia",
+        "role": "former MGA chief executive",
+        "bio": "Former Malta Gaming Authority chief executive whose messages with Fenech about a casino audit were examined by prosecutors. Fenech characterised their relationship as cordial and professional."
+      }
+    ],
+    "relationUpdates": [
+      {
+        "from": "Yorgen Fenech",
+        "to": "Keith Schembri",
+        "count": 10,
+        "tone": -1,
+        "context": "Fenech alleged that Schembri was the mastermind, claimed Schembri authored interrogation scripts and said he acted on Schembri’s instructions when passing information to Theuma. Schembri has denied involvement.",
+        "days": "Day 46"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Melvin Theuma",
+        "count": 10,
+        "tone": -1,
+        "context": "Fenech alleged that Theuma intimidated and financially drained him, while acknowledging giving him about €450,000 and passing him information about impending raids; he denied funding the murder.",
+        "days": "Day 46"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Silvio Valletta",
+        "count": 6,
+        "tone": 1,
+        "context": "Fenech confirmed a close friendship with the former deputy police commissioner, including travel together, but denied misusing that relationship.",
+        "days": "Day 46"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Raymond Aquilina",
+        "count": 5,
+        "tone": 0,
+        "context": "Fenech acknowledged encrypted Signal calls with Aquilina but said he could not remember their content and denied discussing Theuma with him.",
+        "days": "Day 46"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Konrad Mizzi",
+        "count": 5,
+        "tone": 0,
+        "context": "Cross-examination examined messages in which Mizzi told Fenech to delete WhatsApp and laptop material; Fenech said he did not remember deleting WhatsApp and denied commercial ties with Mizzi.",
+        "days": "Day 46"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Daphne Caruana Galizia",
+        "count": 4,
+        "tone": -1,
+        "context": "Prosecutors questioned Fenech about Caruana Galizia’s reporting on 17 Black and a derogatory nickname he used for her after her death, which he acknowledged was not appropriate.",
+        "days": "Day 46"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Marvin Gaerty",
+        "count": 3,
+        "tone": 1,
+        "context": "Fenech described having a good relationship with the former tax commissioner, whose messages with him were presented in court.",
+        "days": "Day 46"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Heathcliff Farrugia",
+        "count": 3,
+        "tone": 0,
+        "context": "Fenech described their relationship as cordial and professional while prosecutors examined messages concerning a casino audit; he denied abusing his influence.",
+        "days": "Day 46"
+      },
+      {
+        "from": "Yorgen Fenech",
+        "to": "Joseph Muscat",
+        "count": 2,
+        "tone": 0,
+        "context": "Prosecutors presented messages in which Fenech told the then-prime minister that a stolen phone had been remotely wiped; Fenech said he could not remember what he meant.",
+        "days": "Day 46"
+      }
+    ]
   }
 ];
