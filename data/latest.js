@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech says he felt threatened by Melvin Theuma",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143896/accused_mastermind_yorgen_fenech_to_resume_testimony_as_jury_trial_enters_day_46_2",
-  "date": "22 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
