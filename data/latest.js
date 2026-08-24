@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Yorgen Fenech says Keith Schembri handed him Europol report on murder suspects",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143927/prosecution_to_continue_crossexamination_of_yorgen_fenech1",
+  "date": "24 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
