@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech says Keith Schembri handed him Europol report on murder suspects",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143927/prosecution_to_continue_crossexamination_of_yorgen_fenech1",
-  "date": "24 August 2026"
+  "title": "LIVE | Yorgen Fenech trial: Prosecution to resume grilling accused on witness stand",
+  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143947/yorgen_fenech_trial_prosecution_to_resume_grilling_accused_on_witness_stand",
+  "date": "25 August 2026"
 };
 window.DAILY_UPDATES = [
   {
