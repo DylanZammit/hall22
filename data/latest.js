@@ -1,6 +1,6 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Prosecution to resume grilling accused on witness stand",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/143947/yorgen_fenech_trial_prosecution_to_resume_grilling_accused_on_witness_stand",
+  "title": "LIVE | Yorgen Fenech trial: Prosecution seeks to connect 17 Black to Caruana Galizia assassination",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMjhRYzIzeEk5Z1RhajlmRXl6RjRTd2EzVmVBMmtBU2tqbThuclhxbTJKZUZ2Vzg4YUJKMThfOXk0aUoyM1hJdHgyX0E2aXhUc2NJSW44dndUNF9CSERzTEVQU0Vqblp1RVlUNEN0LWdBOEV0UmJzNlU0SEVoYUF1bDFQc0I2U3FtazVpeVVGQUhVaUx3anhSWGZtSmlwOXZaeE5aaVVLSlJIY0E4cVVMV1p1UUFOaUVCaUlkZ1FGTVFzeGR2NTlOR3pnaU9yUkU?oc=5",
   "date": "25 August 2026"
 };
 window.DAILY_UPDATES = [
