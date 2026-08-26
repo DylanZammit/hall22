@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Prosecution seeks to connect 17 Black to Caruana Galizia assassination",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMjhRYzIzeEk5Z1RhajlmRXl6RjRTd2EzVmVBMmtBU2tqbThuclhxbTJKZUZ2Vzg4YUJKMThfOXk0aUoyM1hJdHgyX0E2aXhUc2NJSW44dndUNF9CSERzTEVQU0Vqblp1RVlUNEN0LWdBOEV0UmJzNlU0SEVoYUF1bDFQc0I2U3FtazVpeVVGQUhVaUx3anhSWGZtSmlwOXZaeE5aaVVLSlJIY0E4cVVMV1p1UUFOaUVCaUlkZ1FGTVFzeGR2NTlOR3pnaU9yUkU?oc=5",
-  "date": "25 August 2026"
+  "title": "LIVE | Defence set to continue oral submissions as Yorgen Fenech trial enters next phase",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdE01dVlDUkVZYjhNNXJxUzlpMmVQMGRwMHZhOFlSYmNJSXpxYUwwQUlZZ01VVVZEQlUzSldhTVlISUdBd1RjQUNPV01IcEZZZG00T1c0cFRqbHQ2SFIwOHBSRm9UNWhSeU5rd1J3RFpHMmVRS2s4WHhlSDBON01DeU5iWVpjeFhJdHRWbk5BWVhYdHhncF9vbWlmSHR6V0I5TE1vVGMxaDJfaFdKa05paHI3Y1RwS21MemZWd1VZaXI4VC1aU1RkYmNUYlN2YXhaWjFHSFZHSQ?oc=5",
+  "date": "26 August 2026"
 };
 window.DAILY_UPDATES = [
   {
