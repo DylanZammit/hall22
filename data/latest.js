@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Defence set to continue oral submissions as Yorgen Fenech trial enters next phase",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdE01dVlDUkVZYjhNNXJxUzlpMmVQMGRwMHZhOFlSYmNJSXpxYUwwQUlZZ01VVVZEQlUzSldhTVlISUdBd1RjQUNPV01IcEZZZG00T1c0cFRqbHQ2SFIwOHBSRm9UNWhSeU5rd1J3RFpHMmVRS2s4WHhlSDBON01DeU5iWVpjeFhJdHRWbk5BWVhYdHhncF9vbWlmSHR6V0I5TE1vVGMxaDJfaFdKa05paHI3Y1RwS21MemZWd1VZaXI4VC1aU1RkYmNUYlN2YXhaWjFHSFZHSQ?oc=5",
-  "date": "26 August 2026"
+  "title": "LIVE | Yorgen Fenech trial: Defence concludes submissions to call more witnesses",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNMWxxdWJPNGozeVdpUWJMZ1E5cnFJSVRpUDZLWlVmWHRldVBGZlFDZkpyalBwQ2Q5eU5PODh1X25WVXgzTmplcHp5eHRhRE9zbkRNNW1fcW80Y041UXpnX1QwRU5aSWU1cU5pSDVZQVRiS2wwaUI5MEZ3Um5ybXl5amVHbHN0SEM1TnNpZVZLN2RqV3lib00ySjhZM2JnbF9hMVA4eHk2ZndRR1AyZ05ya1JOVEpKeDl3a3pVVE95T19HdW95U09kR0k0S25hVEZ3N1Btb0FrZnJSQ2FRVXplbjVn?oc=5",
+  "date": "27 August 2026"
 };
 window.DAILY_UPDATES = [
   {
