@@ -1251,5 +1251,28 @@ window.DAILY_UPDATES = [
         "days": "Day 46"
       }
     ]
+  },
+  {
+    "day": {
+      "day": 51,
+      "date": "28 Aug",
+      "type": "testimony",
+      "title": "‘His hands are stained with Daphne Caruana Galizia’s blood’: Prosecution ends closing address as defence begins final response",
+      "summary": "Prosecuting lawyer Anthony Vella calls the trial the &ldquo;last chance&rdquo; for justice and urges jurors to find Yorgen Fenech guilty on all counts.",
+      "points": [
+        "Prosecuting lawyer Anthony Vella calls the trial the &ldquo;last chance&rdquo; for justice and urges jurors to find Yorgen Fenech guilty on all counts.",
+        "The latest completed sitting was extracted directly from MaltaToday.",
+        "No allegation reported in court is treated as a finding of fact."
+      ],
+      "sourceTitle": "‘His hands are stained with Daphne Caruana Galizia’s blood’: Prosecution ends closing address as defence begins final response",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/144010/prosecution_to_continue_closing_address_as_yorgen_fenech_trial_resumes_2"
+    },
+    "lead": {
+      "label": "Yesterday · 28 Aug 2026",
+      "title": "‘His hands are stained with Daphne Caruana Galizia’s blood’: Prosecution ends closing address as defence begins final response",
+      "summary": "Prosecuting lawyer Anthony Vella calls the trial the &ldquo;last chance&rdquo; for justice and urges jurors to find Yorgen Fenech guilty on all counts."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": []
   }
 ];
