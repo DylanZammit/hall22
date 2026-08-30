@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Yorgen Fenech trial: Defence says key questions remain unanswered in closing statement",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOX005c0g3a2s3N0NJcklLTGFoZ3dPdmNDRTNlbWtEOEZuZUZsUHB4SExVMm9RMlJoc1pHM050OFZVS2RFQ0FUWlVkLW5iQTl6OWFUUHcxUFFTeEx0QkI3dk9nZ2ppYS1iTExMdEhqeEphZjVaQ2ZISDA0ektwVS1vQlpWU2t1UmRYVDUyZS1Fc1Y4RjhsNmhCcWVPbTJSNm9Bclk4NkkxSXcwbS15NXVjLVRoaUJibEFfc3pKajJhYUhhZjdBMGJsVGExNUJ2Z29kdEE?oc=5",
-  "date": "29 August 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
