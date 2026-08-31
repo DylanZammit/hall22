@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Judge addresses jurors as Yorgen Fenech trial enters final stages",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVTAwZDlvSXhTc1FsQjY4YXdTY3RVYkxuSUp3M0pKQWUweDBOa3RSV3JCZG9qc0xCM1ZhbjkwcUdhelpNUEdTbDRQU2N1YkNLbmx0TlEteHdGVkVXSFAxRk1VM202b0pQMHUySGptNUFONEU0X0NXWGFiSk4yRVdnRmJLUHVybjliQksxMExqbk5qOWN2ckpMTWVOTXZuVm9XY3I5RkhyZkVjcWg4MjJqOFI5UDlLcXVmdmtsa1BmVVN2MmRtX2NXbVJlYzltR1RVbEFrRw?oc=5",
+  "date": "31 August 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
