@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Judge addresses jurors as Yorgen Fenech trial enters final stages",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVTAwZDlvSXhTc1FsQjY4YXdTY3RVYkxuSUp3M0pKQWUweDBOa3RSV3JCZG9qc0xCM1ZhbjkwcUdhelpNUEdTbDRQU2N1YkNLbmx0TlEteHdGVkVXSFAxRk1VM202b0pQMHUySGptNUFONEU0X0NXWGFiSk4yRVdnRmJLUHVybjliQksxMExqbk5qOWN2ckpMTWVOTXZuVm9XY3I5RkhyZkVjcWg4MjJqOFI5UDlLcXVmdmtsa1BmVVN2MmRtX2NXbVJlYzltR1RVbEFrRw?oc=5",
-  "date": "31 August 2026"
+  "title": "LIVE | Judge’s address to jurors continues this morning in Yorgen Fenech trial",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWWRzWDQ0Z2YwaktsT1lRdkFVOWxXOFBuYmtiYTdydGtyMVF4RzBXUnljUXgtcmNVZWlTQ1UtS29vWmNPSGUzUlg0VEd1cVJKU2RybGpRZWxHZ3E0WEhDaHVjcXJ5WW1SdzlLSFdfZVg2TXoyWDByUHVzb2IzRlhVRFFaLURWVlVUR2pyaktIQzR3Zm5SdzFpaXRHTWpwU3JUdmZLOEJjbUNEVDlZVEdEQl8xOV9SaklTY2NQVU9jNUFNaTgyN041OA?oc=5",
+  "date": "1 September 2026"
 };
 window.DAILY_UPDATES = [
   {
