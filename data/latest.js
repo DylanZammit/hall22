@@ -1,7 +1,7 @@
 window.LIVE_UPDATE = {
-  "title": "LIVE | Judge’s address to jurors continues this morning in Yorgen Fenech trial",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWWRzWDQ0Z2YwaktsT1lRdkFVOWxXOFBuYmtiYTdydGtyMVF4RzBXUnljUXgtcmNVZWlTQ1UtS29vWmNPSGUzUlg0VEd1cVJKU2RybGpRZWxHZ3E0WEhDaHVjcXJ5WW1SdzlLSFdfZVg2TXoyWDByUHVzb2IzRlhVRFFaLURWVlVUR2pyaktIQzR3Zm5SdzFpaXRHTWpwU3JUdmZLOEJjbUNEVDlZVEdEQl8xOV9SaklTY2NQVU9jNUFNaTgyN041OA?oc=5",
-  "date": "1 September 2026"
+  "title": "LIVE | Jurors in the Yorgen Fenech trial have been sent to deliberate. What happened in the past 55 days?",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNHhVM0EzLWtKZUVhVkJJckRlMlBHbkh2Q2JFSWx1aXk3SmpRRy1TSXpHOVd1MWE3ZkxIUi1iTDdVVFkyeDR2X2tMYjFoc2NYdGFOaXZsOHdBRFhHNkRRZlFrdVF3TTNJekVUa2JTWm9wSDZIdS00WWNKWVN5ZmhRRWpkRnc4N1E0S1FJbTNNRTFyZXBJWFpIckZ4TVRWb1FBdUF2Zzh0aF9WUTZHYVVpaTkwcHYzbmNkY1NuS1I1cFBQaUsyVk5hMnA3UGJSWjdheWVQZFNxZzRVNVJ3b19LLUtwY1R3SlpnNDVNVg?oc=5",
+  "date": "2 September 2026"
 };
 window.DAILY_UPDATES = [
   {
