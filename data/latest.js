@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Jurors in the Yorgen Fenech trial have been sent to deliberate. What happened in the past 55 days?",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNHhVM0EzLWtKZUVhVkJJckRlMlBHbkh2Q2JFSWx1aXk3SmpRRy1TSXpHOVd1MWE3ZkxIUi1iTDdVVFkyeDR2X2tMYjFoc2NYdGFOaXZsOHdBRFhHNkRRZlFrdVF3TTNJekVUa2JTWm9wSDZIdS00WWNKWVN5ZmhRRWpkRnc4N1E0S1FJbTNNRTFyZXBJWFpIckZ4TVRWb1FBdUF2Zzh0aF9WUTZHYVVpaTkwcHYzbmNkY1NuS1I1cFBQaUsyVk5hMnA3UGJSWjdheWVQZFNxZzRVNVJ3b19LLUtwY1R3SlpnNDVNVg?oc=5",
-  "date": "2 September 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
