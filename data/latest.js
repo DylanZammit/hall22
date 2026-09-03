@@ -1270,5 +1270,28 @@ window.DAILY_UPDATES = [
     },
     "peopleUpdates": [],
     "relationUpdates": []
+  },
+  {
+    "day": {
+      "day": 55,
+      "date": "2 Sep",
+      "type": "verdict",
+      "title": "Jury finds Yorgen Fenech not guilty on both counts",
+      "summary": "The jury returned not-guilty verdicts on both counts against Yorgen Fenech, concluding the 55-day jury trial.",
+      "points": [
+        "The jury found Fenech not guilty of complicity in the wilful homicide by eight votes to one.",
+        "It also found him not guilty, by eight votes to one, of association with a person or persons for the purpose of committing a crime.",
+        "The verdict concluded the jury trial; MaltaToday reported that Fenech had consistently denied the charges."
+      ],
+      "sourceTitle": "LIVE | Yorgen Fenech cleared of masterminding Daphne Caruana Galizia murder",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/144112/yorgen_fenech_trial_enters_final_stretch_as_judge_continues_address_to_jurors_5"
+    },
+    "lead": {
+      "label": "Verdict · 2 Sep 2026",
+      "title": "Jury finds Yorgen Fenech not guilty on both counts.",
+      "summary": "The jury returned 8–1 not-guilty verdicts on the two counts in the indictment, concluding the 55-day jury trial."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": []
   }
 ];
