@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Jurors in the Yorgen Fenech trial have been sent to deliberate. What happened in the past 55 days?",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNHhVM0EzLWtKZUVhVkJJckRlMlBHbkh2Q2JFSWx1aXk3SmpRRy1TSXpHOVd1MWE3ZkxIUi1iTDdVVFkyeDR2X2tMYjFoc2NYdGFOaXZsOHdBRFhHNkRRZlFrdVF3TTNJekVUa2JTWm9wSDZIdS00WWNKWVN5ZmhRRWpkRnc4N1E0S1FJbTNNRTFyZXBJWFpIckZ4TVRWb1FBdUF2Zzh0aF9WUTZHYVVpaTkwcHYzbmNkY1NuS1I1cFBQaUsyVk5hMnA3UGJSWjdheWVQZFNxZzRVNVJ3b19LLUtwY1R3SlpnNDVNVg?oc=5",
-  "date": "2 September 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
@@ -1271,6 +1267,29 @@ window.DAILY_UPDATES = [
       "label": "Yesterday · 28 Aug 2026",
       "title": "‘His hands are stained with Daphne Caruana Galizia’s blood’: Prosecution ends closing address as defence begins final response",
       "summary": "Prosecuting lawyer Anthony Vella calls the trial the &ldquo;last chance&rdquo; for justice and urges jurors to find Yorgen Fenech guilty on all counts."
+    },
+    "peopleUpdates": [],
+    "relationUpdates": []
+  },
+  {
+    "day": {
+      "day": 55,
+      "date": "2 Sep",
+      "type": "verdict",
+      "title": "Jury finds Yorgen Fenech not guilty on both counts",
+      "summary": "The jury returned not-guilty verdicts on both counts against Yorgen Fenech, concluding the 55-day jury trial.",
+      "points": [
+        "The jury found Fenech not guilty of complicity in the wilful homicide by eight votes to one.",
+        "It also found him not guilty, by eight votes to one, of association with a person or persons for the purpose of committing a crime.",
+        "The verdict concluded the jury trial; MaltaToday reported that Fenech had consistently denied the charges."
+      ],
+      "sourceTitle": "LIVE | Yorgen Fenech cleared of masterminding Daphne Caruana Galizia murder",
+      "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/144112/yorgen_fenech_trial_enters_final_stretch_as_judge_continues_address_to_jurors_5"
+    },
+    "lead": {
+      "label": "Verdict · 2 Sep 2026",
+      "title": "Jury finds Yorgen Fenech not guilty on both counts.",
+      "summary": "The jury returned 8–1 not-guilty verdicts on the two counts in the indictment, concluding the 55-day jury trial."
     },
     "peopleUpdates": [],
     "relationUpdates": []
