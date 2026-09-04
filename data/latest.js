@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | BREAKING | Prosecution in Yorgen Fenech to appeal jury verdict - maltatoday.com.mt",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZFUwbFhHNXNiempUem9ENXp4SEFNNkZBeGRJZ2FISTR2TWhNSHMwLTN3LUIzVUlPTzNqTzF2U25oMDkzMUp6NnNDSC0yYTQ1SEJaTTVsSGNVSmh4NVVsYjEySzlDSGQxLW40LXdxV1RRMkZ0aE1oSm9ERHQxdGhkYUxXdW9YYW5NbVB6NElyS1NISkl5XzA0LVhLaDZ6UmtMejQ3dGc5N18yMHJCd0ZBMURucGNpUjRBZlFoeHFpS1Z0MXNHT3VFc1hSVU1xZ1Z2LVdR?oc=5",
+  "date": "4 September 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
