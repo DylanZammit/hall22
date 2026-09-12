@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | The Yorgen Fenech trial in their own words",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/144317/the_yorgen_fenech_trial_in_their_own_words_",
-  "date": "11 September 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
