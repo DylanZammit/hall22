@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Beyond the evidence: Breaking down the law behind the Yorgen Fenech trial",
-  "sourceUrl": "https://www.maltatoday.com.mt/news/court_and_police/144364/beyond_the_evidence_breaking_down_the_law_behind_the_yorgen_fenech_trial",
-  "date": "13 September 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
