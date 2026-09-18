@@ -1,4 +1,8 @@
-window.LIVE_UPDATE = null;
+window.LIVE_UPDATE = {
+  "title": "LIVE | Reserve juror arrested in connection to ongoing probe into Yorgen Fenech trial - maltatoday.com.mt",
+  "sourceUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQNWJJTjlYemlVUVdOX2UwRnV2bnJsQlZsOF8wMFctT1RGV3c2ZTNyelE3NWVBdlE0cUJUckxwRWsyQlZ0MU1LMUhMSmZncTJlOXhHZWt6clI0LW9MbUxycmIwQzdqV0syaDN2NU84Umh4RTZZb2lnQ1Z6SWJ1OXIwbGtJYWxWTDBwcUpjOVFXZzdGYnRYRm5hbGVMT3BTZm9acERUdDRXZnVLQWctZTZoZEdrdWk4THBLZ2s5Z1VIcV8zZEhJSmJjZnJFU1pKX0s3cHBjT1dpTEYwSHNjbmJ6dUtB?oc=5",
+  "date": "18 September 2026"
+};
 window.DAILY_UPDATES = [
   {
     "day": {
