@@ -1,8 +1,4 @@
-window.LIVE_UPDATE = {
-  "title": "LIVE | Three jurors in Yorgen Fenech trial off the hook after police end investigation",
-  "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQelVnY3ZtR0tCNElsMzVSSm91R3llQ1VDYTlmdHh3VFNKMjNGZ2R4bGZXcWNfcW5fYkMyNWtYd0tIWGRxaFFBWUdwZEFlY3NUbWlwVEhYZUI5TzhlVzJRY1lkUEJfWVBDdkZMY2xBRzJNYkE1aFBTdWZQRU5jSXRKUHNlZFRGZVdPOWdzYjhrUFhLaVJPVVozZk1wQXZSUFlSdFZsRkF6SlVSeDZwdWJwTU9jQ19IaFJBY0tiWFk1elFPanBCNGU3ampjdURvdGNl?oc=5",
-  "date": "1 October 2026"
-};
+window.LIVE_UPDATE = null;
 window.DAILY_UPDATES = [
   {
     "day": {
